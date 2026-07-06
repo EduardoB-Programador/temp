@@ -1,0 +1,8 @@
+main {
+    display: block;
+    width: 75%;
+    min-height: 20rem;
+    margin: 7rem auto;
+    background-color: var(--cor3);
+    padding: 1rem;
+}

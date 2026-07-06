@@ -1,0 +1,29 @@
+/admin
+    /id:number
+    /all
+    /add:json
+    /update:json
+    /delete/id:number
+    /login:json{email,senha}
+
+/usuario
+    /id:number
+    /all
+    /add:json
+    /update:json
+    /delete/id:number
+    /login:json{email,senha}
+
+/produto
+    /id:number
+    /all
+    /add:json
+    /update:json
+    /delete/id:number
+
+/pagamento
+    /id:number
+    /all
+    /add:json
+    /update:json
+

@@ -1,0 +1,1297 @@
+$ bun run --watch index.ts
+Started development server: http://localhost:3000
+ 7 | const app = new Hono()
+ 8 | 
+ 9 | app.get('/', async c => {
+10 |     return c.json({message:''})
+11 | })
+12 | .u
+      ^
+TypeError: undefined is not an object (evaluating 'app.get("/", async (c) => {
+  return c.json({ message: "" });
+}).u.route')
+      at /home/polo/pasta-eduardo/e-commerce/e-commerce-back/index.ts:12:2
+      at loadAndEvaluateModule (2:1)
+ 8 | 
+ 9 | app.get('/', async c => {
+10 |     return c.json({message:''})
+11 | })
+12 | .use
+13 | .route('/admin', admin)
+      ^
+TypeError: app.get("/", async (c) => {
+  return c.json({ message: "" });
+}).use.route is not a function. (In 'app.get("/", async (c) => {
+  return c.json({ message: "" });
+}).use.route("/admin", admin)', 'app.get("/", async (c) => {
+  return c.json({ message: "" });
+}).use.route' is undefined)
+      at /home/polo/pasta-eduardo/e-commerce/e-commerce-back/index.ts:13:2
+      at loadAndEvaluateModule (2:1)
+Started development server: http://localhost:3000
+ 7 | const app = new Hono()
+ 8 | 
+ 9 | app.get('/', async c => {
+10 |     return c.json({message:''})
+11 | })
+12 | .use(cor)
+             ^
+ReferenceError: cor is not defined
+      at /home/polo/pasta-eduardo/e-commerce/e-commerce-back/index.ts:12:9
+      at loadAndEvaluateModule (2:1)
+ 7 | const app = new Hono()
+ 8 | 
+ 9 | app.get('/', async c => {
+10 |     return c.json({message:''})
+11 | })
+12 | .use(cors)
+              ^
+ReferenceError: cors is not defined
+      at /home/polo/pasta-eduardo/e-commerce/e-commerce-back/index.ts:12:10
+      at loadAndEvaluateModule (2:1)
+Started development server: http://localhost:3000
+Started development server: http://localhost:3000
+ 8 | const app = new Hono()
+ 9 | 
+10 | app.get('/', async c => {
+11 |     return c.json({message:''})
+12 | })
+13 | .use(cors())
+          ^
+ReferenceError: cors is not defined
+      at /home/polo/pasta-eduardo/e-commerce/e-commerce-back/index.ts:13:6
+      at loadAndEvaluateModule (2:1)
+Started development server: http://localhost:3000
+Started development server: http://localhost:3000
+error: script "dev" was terminated by signal SIGTERM (Polite quit request)
+$ bun run --watch index.ts
+Started development server: http://localhost:3000
+Started development server: http://localhost:3000
+Started development server: http://localhost:3000
+30 | .put('/update', zValidator('json', adminSchema), async c => {
+     ^
+error: Expected identifier but found "."
+    at /home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/routes/adminRotas.ts:30:1
+25 |     return c.json(info, info.code)
+26 | })
+27 | 
+28 | .post
+29 | 
+30 | .put('/update', zValidator('json', adminSchema), async c => {
+      ^
+TypeError: admin.get("/:id{[0-9]+}", async (c) => {
+  const id = Number(c.req.param("id")), info = await db.executarLer({ id }, tabela);
+  return c.json(info, info.code);
+}).get("/all", async (c) => {
+  const info = await db.executarLerTudo(tabela);
+  return c.json(info, info.code);
+}).post("/add", zValidator("json", adminSchema), async (c) => {
+  const obj = c.req.valid("json"), info = await db.executarCriar(obj, tabela);
+  return c.json(info, info.code);
+}).post.put is not a function. (In 'admin.get("/:id{[0-9]+}", async (c) => {
+  const id = Number(c.req.param("id")), info = await db.executarLer({ id }, tabela);
+  return c.json(info, info.code);
+}).get("/all", async (c) => {
+  const info = await db.executarLerTudo(tabela);
+  return c.json(info, info.code);
+}).post("/add", zValidator("json", adminSchema), async (c) => {
+  const obj = c.req.valid("json"), info = await db.executarCriar(obj, tabela);
+  return c.json(info, info.code);
+}).post.put("/update", zValidator("json", adminSchema), async (c) => {
+  const obj = c.req.valid("json"), info = await db.executarAtualizar(obj, tabela);
+  return c.json(info, info.code);
+})', 'admin.get("/:id{[0-9]+}", async (c) => {
+  const id = Number(c.req.param("id")), info = await db.executarLer({ id }, tabela);
+  return c.json(info, info.code);
+}).get("/all", async (c) => {
+  const info = await db.executarLerTudo(tabela);
+  return c.json(info, info.code);
+}).post("/add", zValidator("json", adminSchema), async (c) => {
+  const obj = c.req.valid("json"), info = await db.executarCriar(obj, tabela);
+  return c.json(info, info.code);
+}).post.put' is undefined)
+      at /home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/routes/adminRotas.ts:30:2
+      at loadAndEvaluateModule (2:1)
+Started development server: http://localhost:3000
+Started development server: http://localhost:3000
+Started development server: http://localhost:3000
+Started development server: http://localhost:3000
+Started development server: http://localhost:3000
+29 | .post('/login')
+     ^
+error: Unexpected .
+    at /home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/routes/adminRotas.ts:29:1
+Started development server: http://localhost:3000
+Started development server: http://localhost:3000
+Started development server: http://localhost:3000
+Started development server: http://localhost:3000
+Started development server: http://localhost:3000
+Started development server: http://localhost:3000
+Started development server: http://localhost:3000
+Started development server: http://localhost:3000
+Started development server: http://localhost:3000
+Started development server: http://localhost:3000
+Started development server: http://localhost:3000
+Started development server: http://localhost:3000
+Started development server: http://localhost:3000
+Started development server: http://localhost:3000
+Started development server: http://localhost:3000
+Started development server: http://localhost:3000
+Started development server: http://localhost:3000
+Started development server: http://localhost:3000
+Started development server: http://localhost:3000
+Started development server: http://localhost:3000
+Started development server: http://localhost:3000
+Started development server: http://localhost:3000
+Started development server: http://localhost:3000
+Started development server: http://localhost:3000
+24 |     const info = await db.executarCriar(obj, tabela)
+25 |     return c.json(info, info.code)
+26 | })
+27 | //git clone http://github.com/EduardoB-Programador/temp
+28 | 
+29 | .post('/login', z)
+                      ^
+ReferenceError: z is not defined
+      at /home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/routes/adminRotas.ts:29:18
+      at loadAndEvaluateModule (2:1)
+24 |     const info = await db.executarCriar(obj, tabela)
+25 |     return c.json(info, info.code)
+26 | })
+27 | //git clone http://github.com/EduardoB-Programador/temp
+28 | 
+29 | .post('/login', zValid)
+                           ^
+ReferenceError: zValid is not defined
+      at /home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/routes/adminRotas.ts:29:23
+      at loadAndEvaluateModule (2:1)
+Started development server: http://localhost:3000
+Started development server: http://localhost:3000
+Started development server: http://localhost:3000
+Started development server: http://localhost:3000
+Started development server: http://localhost:3000
+Started development server: http://localhost:3000
+Started development server: http://localhost:3000
+29 | .post('/login', zValidator())
+     ^
+error: Unexpected .
+    at /home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/routes/adminRotas.ts:29:1
+Started development server: http://localhost:3000
+Started development server: http://localhost:3000
+Started development server: http://localhost:3000
+Started development server: http://localhost:3000
+Started development server: http://localhost:3000
+39 | export
+          ^
+error: Unexpected end of file
+    at /home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/model/schemas.ts:39:6
+39 | export
+           ^
+error: Unexpected end of file
+    at /home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/model/schemas.ts:39:7
+39 | export c
+            ^
+error: Unexpected c
+    at /home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/model/schemas.ts:39:8
+39 | export co
+            ^
+error: Unexpected co
+    at /home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/model/schemas.ts:39:8
+39 | export cons
+            ^
+error: Unexpected cons
+    at /home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/model/schemas.ts:39:8
+39 | export const
+                ^
+error: Expected identifier but found end of file
+    at /home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/model/schemas.ts:39:12
+
+39 | export const
+                ^
+error: This constant must be initialized
+    at /home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/model/schemas.ts:39:12
+39 | export const
+                 ^
+error: Expected identifier but found end of file
+    at /home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/model/schemas.ts:39:13
+
+39 | export const
+                 ^
+error: This constant must be initialized
+    at /home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/model/schemas.ts:39:13
+39 | export const l
+                  ^
+error: The constant "l" must be initialized
+    at /home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/model/schemas.ts:39:14
+39 | export const log
+                  ^
+error: The constant "log" must be initialized
+    at /home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/model/schemas.ts:39:14
+39 | export const login
+                  ^
+error: The constant "login" must be initialized
+    at /home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/model/schemas.ts:39:14
+39 | export const loginS
+                  ^
+error: The constant "loginS" must be initialized
+    at /home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/model/schemas.ts:39:14
+39 | export const loginSc
+                  ^
+error: The constant "loginSc" must be initialized
+    at /home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/model/schemas.ts:39:14
+39 | export const loginSche
+                  ^
+error: The constant "loginSche" must be initialized
+    at /home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/model/schemas.ts:39:14
+39 | export const loginSchema
+                  ^
+error: The constant "loginSchema" must be initialized
+    at /home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/model/schemas.ts:39:14
+39 | export const loginSchema
+                  ^
+error: The constant "loginSchema" must be initialized
+    at /home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/model/schemas.ts:39:14
+39 | export const loginSchema =
+                              ^
+error: Unexpected end of file
+    at /home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/model/schemas.ts:39:26
+39 | export const loginSchema =
+                               ^
+error: Unexpected end of file
+    at /home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/model/schemas.ts:39:27
+Started development server: http://localhost:3000
+39 | export const loginSchema = z.
+                                 ^
+error: Expected identifier but found end of file
+    at /home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/model/schemas.ts:39:29
+Started development server: http://localhost:3000
+Started development server: http://localhost:3000
+Started development server: http://localhost:3000
+Started development server: http://localhost:3000
+37 | })
+38 | 
+39 | //novo
+40 | export const loginSchema = z.object({
+41 |     e
+      ^
+ReferenceError: e is not defined
+      at /home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/model/schemas.ts:41:2
+      at loadAndEvaluateModule (2:1)
+37 | })
+38 | 
+39 | //novo
+40 | export const loginSchema = z.object({
+41 |     email
+      ^
+ReferenceError: email is not defined
+      at /home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/model/schemas.ts:41:2
+      at loadAndEvaluateModule (2:1)
+41 | })
+     ^
+error: Unexpected }
+    at /home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/model/schemas.ts:41:1
+41 | })
+     ^
+error: Unexpected }
+    at /home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/model/schemas.ts:41:1
+Started development server: http://localhost:3000
+41 | })
+     ^
+error: Expected identifier but found "}"
+    at /home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/model/schemas.ts:41:1
+
+41 | })
+      ^
+error: Expected "}" but found end of file
+    at /home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/model/schemas.ts:41:2
+Started development server: http://localhost:3000
+Started development server: http://localhost:3000
+Started development server: http://localhost:3000
+38 | 
+39 | //novo
+40 | export const loginSchema = z.object({
+41 |     email: z.email(),
+42 |     s
+      ^
+ReferenceError: s is not defined
+      at /home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/model/schemas.ts:42:2
+      at loadAndEvaluateModule (2:1)
+38 | 
+39 | //novo
+40 | export const loginSchema = z.object({
+41 |     email: z.email(),
+42 |     senha
+      ^
+ReferenceError: senha is not defined
+      at /home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/model/schemas.ts:42:2
+      at loadAndEvaluateModule (2:1)
+42 | })
+     ^
+error: Unexpected }
+    at /home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/model/schemas.ts:42:1
+42 | })
+     ^
+error: Unexpected }
+    at /home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/model/schemas.ts:42:1
+Started development server: http://localhost:3000
+42 | })
+     ^
+error: Expected identifier but found "}"
+    at /home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/model/schemas.ts:42:1
+
+42 | })
+      ^
+error: Expected "}" but found end of file
+    at /home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/model/schemas.ts:42:2
+Started development server: http://localhost:3000
+36 | })
+37 | 
+38 | //novo
+39 | export const loginSchema = z.object({
+40 |     email: z.email(),
+41 |     senha: z.senha()
+                  ^
+TypeError: z.senha is not a function. (In 'z.senha()', 'z.senha' is undefined)
+      at /home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/model/schemas.ts:41:14
+      at loadAndEvaluateModule (2:1)
+Started development server: http://localhost:3000
+42 | })
+     ^
+error: Expected identifier but found "}"
+    at /home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/model/schemas.ts:42:1
+
+42 | })
+      ^
+error: Expected "}" but found end of file
+    at /home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/model/schemas.ts:42:2
+Started development server: http://localhost:3000
+Started development server: http://localhost:3000
+Started development server: http://localhost:3000
+Started development server: http://localhost:3000
+Started development server: http://localhost:3000
+29 | .post('/login', zValidator("json".))
+                                       ^
+error: Expected identifier but found ")"
+    at /home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/routes/adminRotas.ts:29:35
+
+43 | export default admin
+     ^
+error: Expected ")" but found "export"
+    at /home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/routes/adminRotas.ts:43:1
+
+43 | export default admin
+            ^
+error: Expected ")" but found "default"
+    at /home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/routes/adminRotas.ts:43:8
+
+43 | export default admin
+                    ^
+error: Expected ";" but found "admin"
+    at /home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/routes/adminRotas.ts:43:16
+Started development server: http://localhost:3000
+Started development server: http://localhost:3000
+24 |     const info = await db.executarCriar(obj, tabela)
+25 |     return c.json(info, info.code)
+26 | })
+27 | //git clone http://github.com/EduardoB-Programador/temp
+28 | //novo
+29 | .post('/login', zValidator("json", li))
+                                          ^
+ReferenceError: li is not defined
+      at /home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/routes/adminRotas.ts:29:38
+      at loadAndEvaluateModule (2:1)
+24 |     const info = await db.executarCriar(obj, tabela)
+25 |     return c.json(info, info.code)
+26 | })
+27 | //git clone http://github.com/EduardoB-Programador/temp
+28 | //novo
+29 | .post('/login', zValidator("json", ligin))
+                                             ^
+ReferenceError: ligin is not defined
+      at /home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/routes/adminRotas.ts:29:41
+      at loadAndEvaluateModule (2:1)
+Started development server: http://localhost:3000
+24 |     const info = await db.executarCriar(obj, tabela)
+25 |     return c.json(info, info.code)
+26 | })
+27 | //git clone http://github.com/EduardoB-Programador/temp
+28 | //novo
+29 | .post('/login', zValidator("json", login))
+                                             ^
+ReferenceError: login is not defined
+      at /home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/routes/adminRotas.ts:29:41
+      at loadAndEvaluateModule (2:1)
+Started development server: http://localhost:3000
+Started development server: http://localhost:3000
+24 |     const info = await db.executarCriar(obj, tabela)
+25 |     return c.json(info, info.code)
+26 | })
+27 | //git clone http://github.com/EduardoB-Programador/temp
+28 | //novo
+29 | .post('/login', zValidator("json", loginSchema), as)
+                                                        ^
+ReferenceError: as is not defined
+      at /home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/routes/adminRotas.ts:29:52
+      at loadAndEvaluateModule (2:1)
+24 |     const info = await db.executarCriar(obj, tabela)
+25 |     return c.json(info, info.code)
+26 | })
+27 | //git clone http://github.com/EduardoB-Programador/temp
+28 | //novo
+29 | .post('/login', zValidator("json", loginSchema), async)
+                                                           ^
+ReferenceError: async is not defined
+      at /home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/routes/adminRotas.ts:29:55
+      at loadAndEvaluateModule (2:1)
+24 |     const info = await db.executarCriar(obj, tabela)
+25 |     return c.json(info, info.code)
+26 | })
+27 | //git clone http://github.com/EduardoB-Programador/temp
+28 | //novo
+29 | .post('/login', zValidator("json", loginSchema), async )
+                                                            ^
+ReferenceError: async is not defined
+      at /home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/routes/adminRotas.ts:29:56
+      at loadAndEvaluateModule (2:1)
+24 |     const info = await db.executarCriar(obj, tabela)
+25 |     return c.json(info, info.code)
+26 | })
+27 | //git clone http://github.com/EduardoB-Programador/temp
+28 | //novo
+29 | .post('/login', zValidator("json", loginSchema), async ())
+                                                      ^
+ReferenceError: async is not defined
+      at /home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/routes/adminRotas.ts:29:50
+      at loadAndEvaluateModule (2:1)
+24 |     const info = await db.executarCriar(obj, tabela)
+25 |     return c.json(info, info.code)
+26 | })
+27 | //git clone http://github.com/EduardoB-Programador/temp
+28 | //novo
+29 | .post('/login', zValidator("json", loginSchema), async () )
+                                                      ^
+ReferenceError: async is not defined
+      at /home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/routes/adminRotas.ts:29:50
+      at loadAndEvaluateModule (2:1)
+29 | .post('/login', zValidator("json", loginSchema), async () =)
+                                                                ^
+error: Unexpected )
+    at /home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/routes/adminRotas.ts:29:60
+29 | .post('/login', zValidator("json", loginSchema), async () =>)
+                                                                 ^
+error: Unexpected )
+    at /home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/routes/adminRotas.ts:29:61
+29 | .post('/login', zValidator("json", loginSchema), async () => )
+                                                                  ^
+error: Unexpected )
+    at /home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/routes/adminRotas.ts:29:62
+Started development server: http://localhost:3000
+Started development server: http://localhost:3000
+Started development server: http://localhost:3000
+29 | .post('/login', zValidator("json", loginSchema), async ( => {
+                                                              ^
+error: Unexpected =>
+    at /home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/routes/adminRotas.ts:29:58
+Started development server: http://localhost:3000
+Started development server: http://localhost:3000
+31 | })
+     ^
+error: Expected identifier but found "}"
+    at /home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/routes/adminRotas.ts:31:1
+
+45 | export default admin
+     ^
+error: Unexpected export
+    at /home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/routes/adminRotas.ts:45:1
+Started development server: http://localhost:3000
+31 | })
+     ^
+error: Expected identifier but found "}"
+    at /home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/routes/adminRotas.ts:31:1
+
+45 | export default admin
+     ^
+error: Unexpected export
+    at /home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/routes/adminRotas.ts:45:1
+31 | })
+     ^
+error: Expected identifier but found "}"
+    at /home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/routes/adminRotas.ts:31:1
+
+45 | export default admin
+     ^
+error: Unexpected export
+    at /home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/routes/adminRotas.ts:45:1
+31 | })
+     ^
+error: Expected identifier but found "}"
+    at /home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/routes/adminRotas.ts:31:1
+
+45 | export default admin
+     ^
+error: Unexpected export
+    at /home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/routes/adminRotas.ts:45:1
+Started development server: http://localhost:3000
+Started development server: http://localhost:3000
+31 | })
+     ^
+error: Expected identifier but found "}"
+    at /home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/routes/adminRotas.ts:31:1
+
+45 | export default admin
+     ^
+error: Unexpected export
+    at /home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/routes/adminRotas.ts:45:1
+Started development server: http://localhost:3000
+31 | })
+     ^
+error: Expected identifier but found "}"
+    at /home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/routes/adminRotas.ts:31:1
+
+45 | export default admin
+     ^
+error: Unexpected export
+    at /home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/routes/adminRotas.ts:45:1
+Started development server: http://localhost:3000
+Started development server: http://localhost:3000
+Started development server: http://localhost:3000
+Started development server: http://localhost:3000
+Started development server: http://localhost:3000
+30 |     const c.req.valid('json')
+               ^
+error: "c" has already been declared
+    at /home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/routes/adminRotas.ts:30:11
+
+29 | .post('/login', zValidator("json", loginSchema), async c => {
+                                                            ^
+note: "c" was originally declared here
+   at /home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/routes/adminRotas.ts:29:56
+
+30 |     const c.req.valid('json')
+                ^
+error: Expected ";" but found "."
+    at /home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/routes/adminRotas.ts:30:12
+
+30 |     const c.req.valid('json')
+               ^
+error: The constant "c" must be initialized
+    at /home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/routes/adminRotas.ts:30:11
+30 |     const oc.req.valid('json')
+                 ^
+error: Expected ";" but found "."
+    at /home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/routes/adminRotas.ts:30:13
+
+30 |     const oc.req.valid('json')
+               ^
+error: The constant "oc" must be initialized
+    at /home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/routes/adminRotas.ts:30:11
+30 |     const objc.req.valid('json')
+                   ^
+error: Expected ";" but found "."
+    at /home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/routes/adminRotas.ts:30:15
+
+30 |     const objc.req.valid('json')
+               ^
+error: The constant "objc" must be initialized
+    at /home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/routes/adminRotas.ts:30:11
+30 |     const obj c.req.valid('json')
+                   ^
+error: Expected ";" but found "c"
+    at /home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/routes/adminRotas.ts:30:15
+
+30 |     const obj c.req.valid('json')
+               ^
+error: The constant "obj" must be initialized
+    at /home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/routes/adminRotas.ts:30:11
+
+30 |     const obj c.req.valid('json')
+                    ^
+error: Unexpected .
+    at /home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/routes/adminRotas.ts:30:16
+Started development server: http://localhost:3000
+Started development server: http://localhost:3000
+Started development server: http://localhost:3000
+32 | })
+     ^
+error: Expected identifier but found "}"
+    at /home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/routes/adminRotas.ts:32:1
+
+32 | })
+      ^
+error: Expected ";" but found ")"
+    at /home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/routes/adminRotas.ts:32:2
+
+32 | })
+     ^
+error: This constant must be initialized
+    at /home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/routes/adminRotas.ts:32:1
+
+34 | .put('/update', zValidator('json', adminSchema), async c => {
+     ^
+error: Unexpected .
+    at /home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/routes/adminRotas.ts:34:1
+32 | })
+     ^
+error: Expected identifier but found "}"
+    at /home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/routes/adminRotas.ts:32:1
+
+32 | })
+      ^
+error: Expected ";" but found ")"
+    at /home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/routes/adminRotas.ts:32:2
+
+32 | })
+     ^
+error: This constant must be initialized
+    at /home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/routes/adminRotas.ts:32:1
+
+34 | .put('/update', zValidator('json', adminSchema), async c => {
+     ^
+error: Unexpected .
+    at /home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/routes/adminRotas.ts:34:1
+31 |     const i
+               ^
+error: The constant "i" must be initialized
+    at /home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/routes/adminRotas.ts:31:11
+31 |     const info
+               ^
+error: The constant "info" must be initialized
+    at /home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/routes/adminRotas.ts:31:11
+31 |     const info
+               ^
+error: The constant "info" must be initialized
+    at /home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/routes/adminRotas.ts:31:11
+32 | })
+     ^
+error: Unexpected }
+    at /home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/routes/adminRotas.ts:32:1
+32 | })
+     ^
+error: Unexpected }
+    at /home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/routes/adminRotas.ts:32:1
+32 | })
+     ^
+error: Unexpected }
+    at /home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/routes/adminRotas.ts:32:1
+32 | })
+     ^
+error: Unexpected }
+    at /home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/routes/adminRotas.ts:32:1
+Started development server: http://localhost:3000
+Started development server: http://localhost:3000
+32 | })
+     ^
+error: Expected identifier but found "}"
+    at /home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/routes/adminRotas.ts:32:1
+
+46 | export default admin
+     ^
+error: Unexpected export
+    at /home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/routes/adminRotas.ts:46:1
+Started development server: http://localhost:3000
+Started development server: http://localhost:3000
+Started development server: http://localhost:3000
+Started development server: http://localhost:3000
+Started development server: http://localhost:3000
+Started development server: http://localhost:3000
+Started development server: http://localhost:3000
+Started development server: http://localhost:3000
+Started development server: http://localhost:3000
+Started development server: http://localhost:3000
+Started development server: http://localhost:3000
+Started development server: http://localhost:3000
+Started development server: http://localhost:3000
+Started development server: http://localhost:3000
+Started development server: http://localhost:3000
+Started development server: http://localhost:3000
+Started development server: http://localhost:3000
+Started development server: http://localhost:3000
+33 | })
+     ^
+error: Expected identifier but found "}"
+    at /home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/routes/adminRotas.ts:33:1
+
+47 | export default admin
+     ^
+error: Unexpected export
+    at /home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/routes/adminRotas.ts:47:1
+Started development server: http://localhost:3000
+Started development server: http://localhost:3000
+Started development server: http://localhost:3000
+32 |     return c.json(info, in)
+                             ^
+error: Unexpected in
+    at /home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/routes/adminRotas.ts:32:25
+Started development server: http://localhost:3000
+32 |     return c.json(info, info.)
+                                  ^
+error: Expected identifier but found ")"
+    at /home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/routes/adminRotas.ts:32:30
+
+47 | export default admin
+     ^
+error: Unexpected export
+    at /home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/routes/adminRotas.ts:47:1
+Started development server: http://localhost:3000
+Started development server: http://localhost:3000
+Started development server: http://localhost:3000
+23 |     const obj = c.req.valid('json')
+24 |     const info = await db.executarCriar(obj, tabela)
+25 |     return c.json(info, info.code)
+26 | })
+27 | 
+28 | .post('/login', zValidator("json", loginSchema), async c => {
+                                                   ^
+ReferenceError: loginSchema is not defined
+      at /home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/routes/userRotas.ts:28:47
+      at loadAndEvaluateModule (2:1)
+Started development server: http://localhost:3000
+Started development server: http://localhost:3000
+39 |     return c.json(info, info.code)
+         ^
+error: Expected "(" but found "return"
+    at /home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/routes/adminRotas.ts:39:5
+
+40 | })
+     ^
+error: Expected ")" but found "}"
+    at /home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/routes/adminRotas.ts:40:1
+
+40 | })
+      ^
+error: Unexpected )
+    at /home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/routes/adminRotas.ts:40:2
+39 |     return c.json(info, info.code)
+         ^
+error: Expected "(" but found "return"
+    at /home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/routes/adminRotas.ts:39:5
+
+40 | })
+     ^
+error: Expected ")" but found "}"
+    at /home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/routes/adminRotas.ts:40:1
+
+40 | })
+      ^
+error: Unexpected )
+    at /home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/routes/adminRotas.ts:40:2
+38 |     if ()
+             ^
+error: Unexpected )
+    at /home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/routes/adminRotas.ts:38:9
+38 |     if (in)
+             ^
+error: Unexpected in
+    at /home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/routes/adminRotas.ts:38:9
+Started development server: http://localhost:3000
+38 |     if (info.)
+                  ^
+error: Expected identifier but found ")"
+    at /home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/routes/adminRotas.ts:38:14
+
+39 |     return c.json(info, info.code)
+                ^
+error: Expected ")" but found "c"
+    at /home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/routes/adminRotas.ts:39:12
+
+39 |     return c.json(info, info.code)
+                 ^
+error: Unexpected .
+    at /home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/routes/adminRotas.ts:39:13
+Started development server: http://localhost:3000
+38 |     if (info.status === )
+                             ^
+error: Unexpected )
+    at /home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/routes/adminRotas.ts:38:25
+Started development server: http://localhost:3000
+Started development server: http://localhost:3000
+Started development server: http://localhost:3000
+Started development server: http://localhost:3000
+Started development server: http://localhost:3000
+Started development server: http://localhost:3000
+Started development server: http://localhost:3000
+Started development server: http://localhost:3000
+Started development server: http://localhost:3000
+Started development server: http://localhost:3000
+Started development server: http://localhost:3000
+39 |     return c.json(info, info.code)
+         ^
+error: Expected ")" but found "return"
+    at /home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/routes/adminRotas.ts:39:5
+
+39 |     return c.json(info, info.code)
+                ^
+error: Expected ";" but found "c"
+    at /home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/routes/adminRotas.ts:39:12
+
+39 |     return c.json(info, info.code)
+                 ^
+error: Unexpected .
+    at /home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/routes/adminRotas.ts:39:13
+Started development server: http://localhost:3000
+Started development server: http://localhost:3000
+Started development server: http://localhost:3000
+Started development server: http://localhost:3000
+33 |     return c.json(info, info.code)
+         ^
+error: Expected "(" but found "return"
+    at /home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/routes/adminRotas.ts:33:5
+
+34 | })
+     ^
+error: Expected ")" but found "}"
+    at /home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/routes/adminRotas.ts:34:1
+
+34 | })
+      ^
+error: Unexpected )
+    at /home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/routes/adminRotas.ts:34:2
+33 |     return c.json(info, info.code)
+         ^
+error: Expected "(" but found "return"
+    at /home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/routes/adminRotas.ts:33:5
+
+34 | })
+     ^
+error: Expected ")" but found "}"
+    at /home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/routes/adminRotas.ts:34:1
+
+34 | })
+      ^
+error: Unexpected )
+    at /home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/routes/adminRotas.ts:34:2
+32 |     if ()
+             ^
+error: Unexpected )
+    at /home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/routes/adminRotas.ts:32:9
+32 |     if (    if (info.status === 'sucesso'))
+                 ^
+error: Unexpected if
+    at /home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/routes/adminRotas.ts:32:13
+32 |     if ()
+             ^
+error: Unexpected )
+    at /home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/routes/adminRotas.ts:32:9
+33 |     return c.json(info, info.code)
+         ^
+error: Expected "(" but found "return"
+    at /home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/routes/adminRotas.ts:33:5
+
+34 | })
+     ^
+error: Expected ")" but found "}"
+    at /home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/routes/adminRotas.ts:34:1
+
+34 | })
+      ^
+error: Unexpected )
+    at /home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/routes/adminRotas.ts:34:2
+33 |     return c.json(info, info.code)
+         ^
+error: Expected "(" but found "return"
+    at /home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/routes/adminRotas.ts:33:5
+
+34 | })
+     ^
+error: Expected ")" but found "}"
+    at /home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/routes/adminRotas.ts:34:1
+
+34 | })
+      ^
+error: Unexpected )
+    at /home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/routes/adminRotas.ts:34:2
+Started development server: http://localhost:3000
+Started development server: http://localhost:3000
+Started development server: http://localhost:3000
+Started development server: http://localhost:3000
+Started development server: http://localhost:3000
+Started development server: http://localhost:3000
+35 |     return c.json(info, info.code)
+                ^
+error: Expected ";" but found "c"
+    at /home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/routes/adminRotas.ts:35:12
+
+35 |     return c.json(info, info.code)
+                 ^
+error: Unexpected .
+    at /home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/routes/adminRotas.ts:35:13
+Started development server: http://localhost:3000
+35 |     return c.json(info, info.code)
+                ^
+error: Expected ";" but found "c"
+    at /home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/routes/adminRotas.ts:35:12
+
+35 |     return c.json(info, info.code)
+                 ^
+error: Unexpected .
+    at /home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/routes/adminRotas.ts:35:13
+Started development server: http://localhost:3000
+Started development server: http://localhost:3000
+Started development server: http://localhost:3000
+35 |     return c.json(info, info.code)
+                ^
+error: Expected ";" but found "c"
+    at /home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/routes/adminRotas.ts:35:12
+
+35 |     return c.json(info, info.code)
+                 ^
+error: Unexpected .
+    at /home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/routes/adminRotas.ts:35:13
+Started development server: http://localhost:3000
+Started development server: http://localhost:3000
+Started development server: http://localhost:3000
+Started development server: http://localhost:3000
+Started development server: http://localhost:3000
+Started development server: http://localhost:3000
+Started development server: http://localhost:3000
+Started development server: http://localhost:3000
+Started development server: http://localhost:3000
+34 |             Jwt.sign(obj, process.)
+                                       ^
+error: Expected identifier but found ")"
+    at /home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/routes/adminRotas.ts:34:35
+
+35 |     return c.json(info, info.code)
+                ^
+error: Expected ")" but found "c"
+    at /home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/routes/adminRotas.ts:35:12
+Started development server: http://localhost:3000
+34 |             Jwt.sign(obj, process.env.)
+                                           ^
+error: Expected identifier but found ")"
+    at /home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/routes/adminRotas.ts:34:39
+
+35 |     return c.json(info, info.code)
+                ^
+error: Expected ")" but found "c"
+    at /home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/routes/adminRotas.ts:35:12
+Started development server: http://localhost:3000
+Started development server: http://localhost:3000
+Started development server: http://localhost:3000
+Started development server: http://localhost:3000
+Started development server: http://localhost:3000
+Started development server: http://localhost:3000
+Started development server: http://localhost:3000
+35 |     return c.json(info, info.code)
+         ^
+error: Expected ")" but found "return"
+    at /home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/routes/adminRotas.ts:35:5
+
+35 |     return c.json(info, info.code)
+                ^
+error: Expected ";" but found "c"
+    at /home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/routes/adminRotas.ts:35:12
+
+35 |     return c.json(info, info.code)
+                 ^
+error: Unexpected .
+    at /home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/routes/adminRotas.ts:35:13
+Started development server: http://localhost:3000
+Started development server: http://localhost:3000
+Started development server: http://localhost:3000
+Started development server: http://localhost:3000
+Started development server: http://localhost:3000
+34 |             Jwt.sign(obj, process.env.JWT!, "HS256")
+                 ^
+error: Expected ")" but found "Jwt"
+    at /home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/routes/adminRotas.ts:34:13
+
+34 |             Jwt.sign(obj, process.env.JWT!, "HS256")
+                    ^
+error: Unexpected .
+    at /home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/routes/adminRotas.ts:34:16
+Started development server: http://localhost:3000
+Started development server: http://localhost:3000
+Started development server: http://localhost:3000
+Started development server: http://localhost:3000
+33 |     if (info.status === 'sucesso'))
+                                       ^
+error: Unexpected )
+    at /home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/routes/adminRotas.ts:33:35
+Started development server: http://localhost:3000
+Started development server: http://localhost:3000
+Started development server: http://localhost:3000
+Started development server: http://localhost:3000
+Started development server: http://localhost:3000
+Started development server: http://localhost:3000
+Started development server: http://localhost:3000
+Started development server: http://localhost:3000
+Started development server: http://localhost:3000
+36 | })
+     ^
+error: Expected ")" but found "}"
+    at /home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/routes/adminRotas.ts:36:1
+
+36 | })
+      ^
+error: Expected ";" but found ")"
+    at /home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/routes/adminRotas.ts:36:2
+
+38 | .put('/update', zValidator('json', adminSchema), async c => {
+     ^
+error: Unexpected .
+    at /home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/routes/adminRotas.ts:38:1
+Started development server: http://localhost:3000
+Started development server: http://localhost:3000
+Started development server: http://localhost:3000
+35 |     return c.json({Jwt.sign(obj, process.env.JWT!, "HS256"))
+                           ^
+error: Expected "}" but found "."
+    at /home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/routes/adminRotas.ts:35:23
+
+35 |     return c.json({Jwt.sign(obj, process.env.JWT!, "HS256"))
+                            ^
+error: Expected ")" but found "sign"
+    at /home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/routes/adminRotas.ts:35:24
+
+35 |     return c.json({Jwt.sign(obj, process.env.JWT!, "HS256"))
+                                                                ^
+error: Expected ";" but found ")"
+    at /home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/routes/adminRotas.ts:35:60
+35 |     return c.json({Jwt.sign(obj, process.env.JWT!, "HS256")})
+                           ^
+error: Expected "}" but found "."
+    at /home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/routes/adminRotas.ts:35:23
+
+35 |     return c.json({Jwt.sign(obj, process.env.JWT!, "HS256")})
+                            ^
+error: Expected ")" but found "sign"
+    at /home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/routes/adminRotas.ts:35:24
+
+36 | })
+     ^
+error: Unexpected }
+    at /home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/routes/adminRotas.ts:36:1
+35 |     return c.json({toJwt.sign(obj, process.env.JWT!, "HS256")})
+                             ^
+error: Expected "}" but found "."
+    at /home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/routes/adminRotas.ts:35:25
+
+35 |     return c.json({toJwt.sign(obj, process.env.JWT!, "HS256")})
+                              ^
+error: Expected ")" but found "sign"
+    at /home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/routes/adminRotas.ts:35:26
+
+36 | })
+     ^
+error: Unexpected }
+    at /home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/routes/adminRotas.ts:36:1
+35 |     return c.json({tokenJwt.sign(obj, process.env.JWT!, "HS256")})
+                                ^
+error: Expected "}" but found "."
+    at /home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/routes/adminRotas.ts:35:28
+
+35 |     return c.json({tokenJwt.sign(obj, process.env.JWT!, "HS256")})
+                                 ^
+error: Expected ")" but found "sign"
+    at /home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/routes/adminRotas.ts:35:29
+
+36 | })
+     ^
+error: Unexpected }
+    at /home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/routes/adminRotas.ts:36:1
+Started development server: http://localhost:3000
+Started development server: http://localhost:3000
+35 |     return c.json({token: "Jwt.sign(obj, process.env.JWT!, "HS256")})
+                                                                 ^
+error: Expected "}" but found "HS256"
+    at /home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/routes/adminRotas.ts:35:61
+
+35 |     return c.json({token: "Jwt.sign(obj, process.env.JWT!, "HS256")})
+                                                                      ^
+error: Unterminated string literal
+    at /home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/routes/adminRotas.ts:35:66
+Started development server: http://localhost:3000
+35 |     return c.json({token: `Jwt.sign(obj, process.env.JWT!, "HS256")})
+                               ^
+error: Unterminated string literal
+    at /home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/routes/adminRotas.ts:35:27
+Started development server: http://localhost:3000
+Started development server: http://localhost:3000
+Started development server: http://localhost:3000
+Started development server: http://localhost:3000
+Started development server: http://localhost:3000
+Started development server: http://localhost:3000
+35 |     return c.json({token: `Bearer ${Jwt.sign(obj, process.env.JWT!, "HS256")` })
+                                                                                 ^
+error: Unterminated string literal
+    at /home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/routes/adminRotas.ts:35:77
+Started development server: http://localhost:3000
+35 |     return c.json({token: `Bearer ${Jwt.sign(obj, process.env.JWT!, "HS256").}` })
+                                                                                  ^
+error: Expected identifier but found "}"
+    at /home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/routes/adminRotas.ts:35:78
+
+35 |     return c.json({token: `Bearer ${Jwt.sign(obj, process.env.JWT!, "HS256").}` })
+                                                                                   ^
+error: Unterminated string literal
+    at /home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/routes/adminRotas.ts:35:79
+Started development server: http://localhost:3000
+Started development server: http://localhost:3000
+Started development server: http://localhost:3000
+Started development server: http://localhost:3000
+Started development server: http://localhost:3000
+35 |         return c.json({ token: `Bearer ${await Jwt.sign(obj, process.env.JWT!, "HS256"),}`,  })
+                                                                                             ^
+error: Unexpected }
+    at /home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/routes/adminRotas.ts:35:89
+35 |         return c.json({ token: `Bearer ${await Jwt.sign(obj, process.env.JWT!, "HS256"), }`,  })
+                                                                                              ^
+error: Unexpected }
+    at /home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/routes/adminRotas.ts:35:90
+Started development server: http://localhost:3000
+35 |         return c.json({ token: `Bearer ${await Jwt.sign(obj, process.env.JWT!, "HS256"), ..info}`,  })
+                                                                                              ^
+error: Unexpected .
+    at /home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/routes/adminRotas.ts:35:90
+35 |         return c.json({ token: `Bearer ${await Jwt.sign(obj, process.env.JWT!, "HS256"), ...info}`,  })
+                                                                                              ^
+error: Unexpected ...
+    at /home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/routes/adminRotas.ts:35:90
+35 |         return c.json({ token: `Bearer ${await Jwt.sign(obj, process.env.JWT!, "HS256"), }`,  })
+                                                                                              ^
+error: Unexpected }
+    at /home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/routes/adminRotas.ts:35:90
+Started development server: http://localhost:3000
+35 |         return c.json({ ,token: `Bearer ${await Jwt.sign(obj, process.env.JWT!, "HS256")}`,  })
+                             ^
+error: Expected identifier but found ","
+    at /home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/routes/adminRotas.ts:35:25
+Started development server: http://localhost:3000
+Started development server: http://localhost:3000
+Started development server: http://localhost:3000
+35 |         return c.json({ ...info, token: `Bearer ${await Jwt.sign(obj, process.env.JWT!, "HS256")}`, in})
+                                                                                                           ^
+error: Expected " =" but found "}"
+    at /home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/routes/adminRotas.ts:35:103
+
+35 |         return c.json({ ...info, token: `Bearer ${await Jwt.sign(obj, process.env.JWT!, "HS256")}`, in})
+                                                                                                            ^
+error: Unexpected )
+    at /home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/routes/adminRotas.ts:35:104
+Started development server: http://localhost:3000
+35 |         return c.json({ ...info, token: `Bearer ${await Jwt.sign(obj, process.env.JWT!, "HS256")}`, info.})
+                                                                                                             ^
+error: Expected "}" but found "."
+    at /home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/routes/adminRotas.ts:35:105
+
+35 |         return c.json({ ...info, token: `Bearer ${await Jwt.sign(obj, process.env.JWT!, "HS256")}`, info.})
+                                                                                                              ^
+error: Expected ")" but found "}"
+    at /home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/routes/adminRotas.ts:35:106
+
+35 |         return c.json({ ...info, token: `Bearer ${await Jwt.sign(obj, process.env.JWT!, "HS256")}`, info.})
+                                                                                                               ^
+error: Expected ";" but found ")"
+    at /home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/routes/adminRotas.ts:35:107
+35 |         return c.json({ ...info, token: `Bearer ${await Jwt.sign(obj, process.env.JWT!, "HS256")}`, info.c})
+                                                                                                             ^
+error: Expected "}" but found "."
+    at /home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/routes/adminRotas.ts:35:105
+
+35 |         return c.json({ ...info, token: `Bearer ${await Jwt.sign(obj, process.env.JWT!, "HS256")}`, info.c})
+                                                                                                              ^
+error: Expected ")" but found "c"
+    at /home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/routes/adminRotas.ts:35:106
+
+36 |     })
+         ^
+error: Unexpected }
+    at /home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/routes/adminRotas.ts:36:5
+35 |         return c.json({ ...info, token: `Bearer ${await Jwt.sign(obj, process.env.JWT!, "HS256")}`, info.code})
+                                                                                                             ^
+error: Expected "}" but found "."
+    at /home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/routes/adminRotas.ts:35:105
+
+35 |         return c.json({ ...info, token: `Bearer ${await Jwt.sign(obj, process.env.JWT!, "HS256")}`, info.code})
+                                                                                                              ^
+error: Expected ")" but found "code"
+    at /home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/routes/adminRotas.ts:35:106
+
+36 |     })
+         ^
+error: Unexpected }
+    at /home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/routes/adminRotas.ts:36:5
+35 |         return c.json({ ...info, token: `Bearer ${await Jwt.sign(obj, process.env.JWT!, "HS256")}`, info.})
+                                                                                                             ^
+error: Expected "}" but found "."
+    at /home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/routes/adminRotas.ts:35:105
+
+35 |         return c.json({ ...info, token: `Bearer ${await Jwt.sign(obj, process.env.JWT!, "HS256")}`, info.})
+                                                                                                              ^
+error: Expected ")" but found "}"
+    at /home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/routes/adminRotas.ts:35:106
+
+35 |         return c.json({ ...info, token: `Bearer ${await Jwt.sign(obj, process.env.JWT!, "HS256")}`, info.})
+                                                                                                               ^
+error: Expected ";" but found ")"
+    at /home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/routes/adminRotas.ts:35:107
+Started development server: http://localhost:3000
+Started development server: http://localhost:3000
+Started development server: http://localhost:3000
+35 |         return c.json({ ...info, token: `Bearer ${await Jwt.sign(obj, process.env.JWT!, "HS256")}`} in)
+                                                                                                           ^
+error: Unexpected )
+    at /home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/routes/adminRotas.ts:35:103
+35 |         return c.json({ ...info, token: `Bearer ${await Jwt.sign(obj, process.env.JWT!, "HS256")}`} inf)
+                                                                                                         ^
+error: Expected ")" but found "inf"
+    at /home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/routes/adminRotas.ts:35:101
+
+35 |         return c.json({ ...info, token: `Bearer ${await Jwt.sign(obj, process.env.JWT!, "HS256")}`} inf)
+                                                                                                            ^
+error: Expected ";" but found ")"
+    at /home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/routes/adminRotas.ts:35:104
+35 |         return c.json({ ...info, token: `Bearer ${await Jwt.sign(obj, process.env.JWT!, "HS256")}`} info)
+                                                                                                         ^
+error: Expected ")" but found "info"
+    at /home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/routes/adminRotas.ts:35:101
+
+35 |         return c.json({ ...info, token: `Bearer ${await Jwt.sign(obj, process.env.JWT!, "HS256")}`} info)
+                                                                                                             ^
+error: Expected ";" but found ")"
+    at /home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/routes/adminRotas.ts:35:105
+35 |         return c.json({ ...info, token: `Bearer ${await Jwt.sign(obj, process.env.JWT!, "HS256")}`} info.)
+                                                                                                         ^
+error: Expected ")" but found "info"
+    at /home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/routes/adminRotas.ts:35:101
+
+35 |         return c.json({ ...info, token: `Bearer ${await Jwt.sign(obj, process.env.JWT!, "HS256")}`} info.)
+                                                                                                              ^
+error: Expected identifier but found ")"
+    at /home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/routes/adminRotas.ts:35:106
+
+36 |     })
+          ^
+error: Expected ";" but found ")"
+    at /home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/routes/adminRotas.ts:36:6
+
+38 |     .put('/update', zValidator('json', adminSchema), async c => {
+         ^
+error: Unexpected .
+    at /home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/routes/adminRotas.ts:38:5
+35 |         return c.json({ ...info, token: `Bearer ${await Jwt.sign(obj, process.env.JWT!, "HS256")}`} info.c)
+                                                                                                         ^
+error: Expected ")" but found "info"
+    at /home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/routes/adminRotas.ts:35:101
+
+35 |         return c.json({ ...info, token: `Bearer ${await Jwt.sign(obj, process.env.JWT!, "HS256")}`} info.c)
+                                                                                                               ^
+error: Expected ";" but found ")"
+    at /home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/routes/adminRotas.ts:35:107
+35 |         return c.json({ ...info, token: `Bearer ${await Jwt.sign(obj, process.env.JWT!, "HS256")}`} info.code)
+                                                                                                         ^
+error: Expected ")" but found "info"
+    at /home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/routes/adminRotas.ts:35:101
+
+35 |         return c.json({ ...info, token: `Bearer ${await Jwt.sign(obj, process.env.JWT!, "HS256")}`} info.code)
+                                                                                                                  ^
+error: Expected ";" but found ")"
+    at /home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/routes/adminRotas.ts:35:110
+Started development server: http://localhost:3000
+Started development server: http://localhost:3000
+Started development server: http://localhost:3000
+Started development server: http://localhost:3000
+Started development server: http://localhost:3000
+Started development server: http://localhost:3000
+Started development server: http://localhost:3000
