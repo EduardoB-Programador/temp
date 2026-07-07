@@ -14511,3 +14511,10 @@ $ vite
 16:04:03 [vite] (client) page reload src/main.tsx
 16:04:03 [vite] (client) page reload src/main.tsx
 16:04:05 [vite] (client) page reload src/main.tsx
+error: script "dev" was terminated by signal SIGHUP (Terminal hung up)
+$ vite
+
+  VITE v6.4.3  ready in 455 ms
+
+  ➜  Local:   http://localhost:5173/
+  ➜  Network: use --host to expose

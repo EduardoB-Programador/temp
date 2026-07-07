@@ -3,6 +3,7 @@ import '../styles/CredentialsContainer.css'
 import { admin } from '../types/ModelTypes';
 import { SetReactFunction } from '../types/ReactTypes';
 
+//Um React Component, é apenas uma parte do site, um componente dele
 export default function AdminSignContainer(props: { set: SetReactFunction<admin | undefined> }) {
     const { set } = props
     const nomeRef = useRef<HTMLInputElement>(null)

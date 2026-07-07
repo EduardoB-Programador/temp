@@ -1295,3 +1295,6 @@ Started development server: http://localhost:3000
 Started development server: http://localhost:3000
 Started development server: http://localhost:3000
 Started development server: http://localhost:3000
+error: script "dev" was terminated by signal SIGHUP (Terminal hung up)
+$ bun run --watch index.ts
+Started development server: http://localhost:3000

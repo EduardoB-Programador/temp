@@ -6,6 +6,7 @@ import Header from '../components/Header'
 import LoginContainer from '../components/LoginContainer'
 import Footer from '../components/Footer'
 
+//Pagina -> efetivamente é um React Component, mas é um componente completo que retorna outros componentes
 export default function AdminLog() {
     const [credentialsLog, setCredentialsLog] = useState<admin | undefined>()
 
