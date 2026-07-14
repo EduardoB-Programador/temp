@@ -9,7 +9,7 @@ export default function Header(props: {children?:React.JSX.Element}) {
                 <a href="/" id='img-link'>
                     <img src={logo} alt="" className='logo-img'/>
                 </a>
-                <a href="/sobre" className='header-link'>Sobre</a>
+                <a href="/sobre" className='header-link'>sobre</a>
             </div>
             <div className='mh'>
                 {props.children}

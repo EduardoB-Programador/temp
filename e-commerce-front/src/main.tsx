@@ -24,7 +24,7 @@ createRoot(document.getElementById('root')!).render(
         <Route element={<Sobre />} path='/sobre' />
       </Routes>
     </BrowserRouter>
-  </StrictMode>,
+  </StrictMode>
 )
 
 //Header.tsx

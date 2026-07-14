@@ -1298,3 +1298,1370 @@ Started development server: http://localhost:3000
 error: script "dev" was terminated by signal SIGHUP (Terminal hung up)
 $ bun run --watch index.ts
 Started development server: http://localhost:3000
+$ bun run --watch index.ts
+Started development server: http://localhost:3000
+Started development server: http://localhost:3000
+12 | admin.get('/:id{[0-9]+}', A async c => {
+                                 ^
+error: Expected ")" but found "async"
+    at /home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/routes/adminRotas.ts:12:29
+
+12 | admin.get('/:id{[0-9]+}', A async c => {
+                                       ^
+error: Expected ";" but found "c"
+    at /home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/routes/adminRotas.ts:12:35
+
+12 | admin.get('/:id{[0-9]+}', A async c => {
+                                         ^
+error: Unexpected =>
+    at /home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/routes/adminRotas.ts:12:37
+12 | admin.get('/:id{[0-9]+}', Au async c => {
+                                  ^
+error: Expected ")" but found "async"
+    at /home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/routes/adminRotas.ts:12:30
+
+12 | admin.get('/:id{[0-9]+}', Au async c => {
+                                        ^
+error: Expected ";" but found "c"
+    at /home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/routes/adminRotas.ts:12:36
+
+12 | admin.get('/:id{[0-9]+}', Au async c => {
+                                          ^
+error: Unexpected =>
+    at /home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/routes/adminRotas.ts:12:38
+12 | admin.get('/:id{[0-9]+}', Auth async c => {
+                                    ^
+error: Expected ")" but found "async"
+    at /home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/routes/adminRotas.ts:12:32
+
+12 | admin.get('/:id{[0-9]+}', Auth async c => {
+                                          ^
+error: Expected ";" but found "c"
+    at /home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/routes/adminRotas.ts:12:38
+
+12 | admin.get('/:id{[0-9]+}', Auth async c => {
+                                            ^
+error: Unexpected =>
+    at /home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/routes/adminRotas.ts:12:40
+12 | admin.get('/:id{[0-9]+}', AuthM async c => {
+                                     ^
+error: Expected ")" but found "async"
+    at /home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/routes/adminRotas.ts:12:33
+
+12 | admin.get('/:id{[0-9]+}', AuthM async c => {
+                                           ^
+error: Expected ";" but found "c"
+    at /home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/routes/adminRotas.ts:12:39
+
+12 | admin.get('/:id{[0-9]+}', AuthM async c => {
+                                             ^
+error: Unexpected =>
+    at /home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/routes/adminRotas.ts:12:41
+12 | admin.get('/:id{[0-9]+}', AuthMi async c => {
+                                      ^
+error: Expected ")" but found "async"
+    at /home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/routes/adminRotas.ts:12:34
+
+12 | admin.get('/:id{[0-9]+}', AuthMi async c => {
+                                            ^
+error: Expected ";" but found "c"
+    at /home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/routes/adminRotas.ts:12:40
+
+12 | admin.get('/:id{[0-9]+}', AuthMi async c => {
+                                              ^
+error: Unexpected =>
+    at /home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/routes/adminRotas.ts:12:42
+12 | admin.get('/:id{[0-9]+}', AuthMiddle async c => {
+                                          ^
+error: Expected ")" but found "async"
+    at /home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/routes/adminRotas.ts:12:38
+
+12 | admin.get('/:id{[0-9]+}', AuthMiddle async c => {
+                                                ^
+error: Expected ";" but found "c"
+    at /home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/routes/adminRotas.ts:12:44
+
+12 | admin.get('/:id{[0-9]+}', AuthMiddle async c => {
+                                                  ^
+error: Unexpected =>
+    at /home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/routes/adminRotas.ts:12:46
+13 | admin.get('/:id{[0-9]+}', AuthMiddleware async c => {
+                                              ^
+error: Expected ")" but found "async"
+    at /home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/routes/adminRotas.ts:13:42
+
+13 | admin.get('/:id{[0-9]+}', AuthMiddleware async c => {
+                                                    ^
+error: Expected ";" but found "c"
+    at /home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/routes/adminRotas.ts:13:48
+
+13 | admin.get('/:id{[0-9]+}', AuthMiddleware async c => {
+                                                      ^
+error: Unexpected =>
+    at /home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/routes/adminRotas.ts:13:50
+Started development server: http://localhost:3000
+Started development server: http://localhost:3000
+19 |     .get('/all', , async c => {
+                      ^
+error: Unexpected ,
+    at /home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/routes/adminRotas.ts:19:18
+14 |     const id = Number(c.req.param('id'))
+15 |     const info = await db.executarLer({ id: id }, tabela)
+16 |     return c.json(info, info.code)
+17 | })
+18 | 
+19 |     .get('/all', a, async c => {
+                      ^
+ReferenceError: a is not defined
+      at /home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/routes/adminRotas.ts:19:18
+      at loadAndEvaluateModule (2:1)
+19 |     .get('/all', , async c => {
+                      ^
+error: Unexpected ,
+    at /home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/routes/adminRotas.ts:19:18
+14 |     const id = Number(c.req.param('id'))
+15 |     const info = await db.executarLer({ id: id }, tabela)
+16 |     return c.json(info, info.code)
+17 | })
+18 | 
+19 |     .get('/all', Au, async c => {
+                      ^
+ReferenceError: Au is not defined
+      at /home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/routes/adminRotas.ts:19:18
+      at loadAndEvaluateModule (2:1)
+14 |     const id = Number(c.req.param('id'))
+15 |     const info = await db.executarLer({ id: id }, tabela)
+16 |     return c.json(info, info.code)
+17 | })
+18 | 
+19 |     .get('/all', Auth, async c => {
+                      ^
+ReferenceError: Auth is not defined
+      at /home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/routes/adminRotas.ts:19:18
+      at loadAndEvaluateModule (2:1)
+14 |     const id = Number(c.req.param('id'))
+15 |     const info = await db.executarLer({ id: id }, tabela)
+16 |     return c.json(info, info.code)
+17 | })
+18 | 
+19 |     .get('/all', AuthMiddle, async c => {
+                      ^
+ReferenceError: AuthMiddle is not defined
+      at /home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/routes/adminRotas.ts:19:18
+      at loadAndEvaluateModule (2:1)
+Started development server: http://localhost:3000
+24 |     .post('/add',, zValidator('json', adminSchema), async c => {
+                      ^
+error: Unexpected ,
+    at /home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/routes/adminRotas.ts:24:18
+24 |     .post('/add',,  zValidator('json', adminSchema), async c => {
+                      ^
+error: Unexpected ,
+    at /home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/routes/adminRotas.ts:24:18
+Started development server: http://localhost:3000
+Started development server: http://localhost:3000
+Started development server: http://localhost:3000
+Started development server: http://localhost:3000
+39 |     .put('/update', AuthMiddleware zValidator('json', adminSchema), async c => {
+                                        ^
+error: Expected ")" but found "zValidator"
+    at /home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/routes/adminRotas.ts:39:36
+
+43 |     })
+          ^
+error: Expected ";" but found ")"
+    at /home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/routes/adminRotas.ts:43:6
+
+45 |     .delete('/delete/:id{[0-9]+}', async c => {
+         ^
+error: Unexpected .
+    at /home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/routes/adminRotas.ts:45:5
+Started development server: http://localhost:3000
+Started development server: http://localhost:3000
+45 |     .delete('/delete/:id{[0-9]+}', AuthMiddleware async c => {
+                                                       ^
+error: Expected ")" but found "async"
+    at /home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/routes/adminRotas.ts:45:51
+
+45 |     .delete('/delete/:id{[0-9]+}', AuthMiddleware async c => {
+                                                             ^
+error: Expected ";" but found "c"
+    at /home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/routes/adminRotas.ts:45:57
+
+45 |     .delete('/delete/:id{[0-9]+}', AuthMiddleware async c => {
+                                                               ^
+error: Unexpected =>
+    at /home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/routes/adminRotas.ts:45:59
+Started development server: http://localhost:3000
+Started development server: http://localhost:3000
+11 | pagamento.get('/:id{[0-9]+}', AuthMiddleware async c => {
+                                                  ^
+error: Expected ")" but found "async"
+    at /home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/routes/pagRotas.ts:11:46
+
+11 | pagamento.get('/:id{[0-9]+}', AuthMiddleware async c => {
+                                                        ^
+error: Expected ";" but found "c"
+    at /home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/routes/pagRotas.ts:11:52
+
+11 | pagamento.get('/:id{[0-9]+}', AuthMiddleware async c => {
+                                                          ^
+error: Unexpected =>
+    at /home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/routes/pagRotas.ts:11:54
+ 6 | const pagamento = new Hono()
+ 7 | 
+ 8 | const db = Postgre.getInstance()
+ 9 | const tabela = 'pagamento'
+10 | 
+11 | pagamento.get('/:id{[0-9]+}', AuthMiddleware, async c => {
+                                   ^
+ReferenceError: AuthMiddleware is not defined
+      at /home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/routes/pagRotas.ts:11:31
+      at loadAndEvaluateModule (2:1)
+Started development server: http://localhost:3000
+Started development server: http://localhost:3000
+18 | .get('/all', AuthMiddleware async c => {
+                                 ^
+error: Expected ")" but found "async"
+    at /home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/routes/pagRotas.ts:18:29
+
+18 | .get('/all', AuthMiddleware async c => {
+                                       ^
+error: Expected ";" but found "c"
+    at /home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/routes/pagRotas.ts:18:35
+
+18 | .get('/all', AuthMiddleware async c => {
+                                         ^
+error: Unexpected =>
+    at /home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/routes/pagRotas.ts:18:37
+Started development server: http://localhost:3000
+Started development server: http://localhost:3000
+23 | .post('/add', AuthMiddleware zValidator('json', pagSchema), async c => {
+                                  ^
+error: Expected ")" but found "zValidator"
+    at /home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/routes/pagRotas.ts:23:30
+
+27 | })
+      ^
+error: Expected ";" but found ")"
+    at /home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/routes/pagRotas.ts:27:2
+
+29 | .put('/update', zValidator('json', pagSchema), async c => {
+     ^
+error: Unexpected .
+    at /home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/routes/pagRotas.ts:29:1
+Started development server: http://localhost:3000
+Started development server: http://localhost:3000
+29 | .put('/update', AuthMiddleware zValidator('json', pagSchema), async c => {
+                                    ^
+error: Expected ")" but found "zValidator"
+    at /home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/routes/pagRotas.ts:29:32
+
+33 | })
+      ^
+error: Expected ";" but found ")"
+    at /home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/routes/pagRotas.ts:33:2
+Started development server: http://localhost:3000
+Started development server: http://localhost:3000
+22 | .post('/add', AuthMiddleware zValidator('json', produtoSchema), async c => {
+                                  ^
+error: Expected ")" but found "zValidator"
+    at /home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/routes/prodRotas.ts:22:30
+
+26 | })
+      ^
+error: Expected ";" but found ")"
+    at /home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/routes/prodRotas.ts:26:2
+
+28 | .put('/update', zValidator('json', produtoSchema), async c => {
+     ^
+error: Unexpected .
+    at /home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/routes/prodRotas.ts:28:1
+17 | .get('/all', async c => {
+18 |     const info = await db.executarLerTudo(tabela)
+19 |     return c.json(info, info.code)
+20 | })
+21 | 
+22 | .post('/add', AuthMiddleware, zValidator('json', produtoSchema), async c => {
+                   ^
+ReferenceError: AuthMiddleware is not defined
+      at /home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/routes/prodRotas.ts:22:15
+      at loadAndEvaluateModule (2:1)
+Started development server: http://localhost:3000
+Started development server: http://localhost:3000
+Started development server: http://localhost:3000
+Started development server: http://localhost:3000
+Started development server: http://localhost:3000
+Started development server: http://localhost:3000
+35 | .delete('/delete/:id{[0-9]+}', AuthMiddleware async c => {
+                                                   ^
+error: Expected ")" but found "async"
+    at /home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/routes/prodRotas.ts:35:47
+
+35 | .delete('/delete/:id{[0-9]+}', AuthMiddleware async c => {
+                                                         ^
+error: Expected ";" but found "c"
+    at /home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/routes/prodRotas.ts:35:53
+
+35 | .delete('/delete/:id{[0-9]+}', AuthMiddleware async c => {
+                                                           ^
+error: Unexpected =>
+    at /home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/routes/prodRotas.ts:35:55
+Started development server: http://localhost:3000
+Started development server: http://localhost:3000
+18 |     .get('/all', AuthMiddleware async c => {
+                                     ^
+error: Expected ")" but found "async"
+    at /home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/routes/userRotas.ts:18:33
+
+18 |     .get('/all', AuthMiddleware async c => {
+                                           ^
+error: Expected ";" but found "c"
+    at /home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/routes/userRotas.ts:18:39
+
+18 |     .get('/all', AuthMiddleware async c => {
+                                             ^
+error: Unexpected =>
+    at /home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/routes/userRotas.ts:18:41
+13 |     const id = Number(c.req.param('id'))
+14 |     const info = await db.executarLer({ id: id }, tabela)
+15 |     return c.json(info, info.code)
+16 | })
+17 | 
+18 |     .get('/all', AuthMiddleware, async c => {
+                      ^
+ReferenceError: AuthMiddleware is not defined
+      at /home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/routes/userRotas.ts:18:18
+      at loadAndEvaluateModule (2:1)
+Started development server: http://localhost:3000
+Started development server: http://localhost:3000
+38 |     .put('/update', AuthMiddleware zValidator('json', usuarioSchema), async c => {
+                                        ^
+error: Expected ")" but found "zValidator"
+    at /home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/routes/userRotas.ts:38:36
+
+42 |     })
+          ^
+error: Expected ";" but found ")"
+    at /home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/routes/userRotas.ts:42:6
+
+44 |     .delete('/delete/:id{[0-9]+}', async c => {
+         ^
+error: Unexpected .
+    at /home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/routes/userRotas.ts:44:5
+Started development server: http://localhost:3000
+Started development server: http://localhost:3000
+44 |     .delete('/delete/:id{[0-9]+}', AuthMiddleware async c => {
+                                                       ^
+error: Expected ")" but found "async"
+    at /home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/routes/userRotas.ts:44:51
+
+44 |     .delete('/delete/:id{[0-9]+}', AuthMiddleware async c => {
+                                                             ^
+error: Expected ";" but found "c"
+    at /home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/routes/userRotas.ts:44:57
+
+44 |     .delete('/delete/:id{[0-9]+}', AuthMiddleware async c => {
+                                                               ^
+error: Unexpected =>
+    at /home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/routes/userRotas.ts:44:59
+Started development server: http://localhost:3000
+Started development server: http://localhost:3000
+13 | usuario.get('/:id{[0-9]+}', AuthMiddleware async c => {
+                                                ^
+error: Expected ")" but found "async"
+    at /home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/routes/userRotas.ts:13:44
+
+13 | usuario.get('/:id{[0-9]+}', AuthMiddleware async c => {
+                                                      ^
+error: Expected ";" but found "c"
+    at /home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/routes/userRotas.ts:13:50
+
+13 | usuario.get('/:id{[0-9]+}', AuthMiddleware async c => {
+                                                        ^
+error: Unexpected =>
+    at /home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/routes/userRotas.ts:13:52
+Started development server: http://localhost:3000
+Started development server: http://localhost:3000
+Started development server: http://localhost:3000
+Started development server: http://localhost:3000
+Started development server: http://localhost:3000
+Started development server: http://localhost:3000
+Started development server: http://localhost:3000
+Started development server: http://localhost:3000
+Started development server: http://localhost:3000
+Started development server: http://localhost:3000
+Started development server: http://localhost:3000
+Started development server: http://localhost:3000
+Started development server: http://localhost:3000
+Started development server: http://localhost:3000
+Started development server: http://localhost:3000
+Started development server: http://localhost:3000
+Started development server: http://localhost:3000
+Started development server: http://localhost:3000
+Started development server: http://localhost:3000
+Started development server: http://localhost:3000
+Started development server: http://localhost:3000
+Started development server: http://localhost:3000
+Started development server: http://localhost:3000
+Started development server: http://localhost:3000
+Started development server: http://localhost:3000
+Started development server: http://localhost:3000
+Started development server: http://localhost:3000
+Started development server: http://localhost:3000
+Started development server: http://localhost:3000
+Started development server: http://localhost:3000
+Started development server: http://localhost:3000
+Started development server: http://localhost:3000
+Started development server: http://localhost:3000
+Started development server: http://localhost:3000
+Started development server: http://localhost:3000
+Started development server: http://localhost:3000
+Started development server: http://localhost:3000
+Started development server: http://localhost:3000
+Started development server: http://localhost:3000
+Started development server: http://localhost:3000
+Started development server: http://localhost:3000
+Started development server: http://localhost:3000
+Started development server: http://localhost:3000
+Started development server: http://localhost:3000
+Started development server: http://localhost:3000
+Started development server: http://localhost:3000
+Started development server: http://localhost:3000
+Started development server: http://localhost:3000
+Started development server: http://localhost:3000
+Started development server: http://localhost:3000
+Started development server: http://localhost:3000
+Started development server: http://localhost:3000
+Started development server: http://localhost:3000
+Started development server: http://localhost:3000
+Started development server: http://localhost:3000
+Started development server: http://localhost:3000
+Started development server: http://localhost:3000
+37 |         })}` }, info.code)
+             ^
+error: Unexpected }
+    at /home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/routes/userRotas.ts:37:9
+37 |         })}` }, info.code)
+             ^
+error: Unexpected }
+    at /home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/routes/userRotas.ts:37:9
+37 |         },)}` }, info.code)
+             ^
+error: Unexpected }
+    at /home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/routes/userRotas.ts:37:9
+37 |         }, )}` }, info.code)
+             ^
+error: Unexpected }
+    at /home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/routes/userRotas.ts:37:9
+37 |         }, "HS256")}` }, info.code)
+             ^
+error: Unexpected }
+    at /home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/routes/userRotas.ts:37:9
+38 |         }, "HS256")}` }, info.code)
+             ^
+error: Unexpected }
+    at /home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/routes/userRotas.ts:38:9
+14 | usuario.get('/:id{[0-9]+}', AuthMiddleware, async c => {
+     ^
+error: "usuario" has already been declared
+    at /home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/routes/userRotas.ts:14:1
+
+8 | const usuario = new Hono()
+          ^
+note: "usuario" was originally declared here
+   at /home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/routes/userRotas.ts:8:7
+
+14 | usuario.get('/:id{[0-9]+}', AuthMiddleware, async c => {
+            ^
+error: Expected ";" but found "."
+    at /home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/routes/userRotas.ts:14:8
+
+14 | usuario.get('/:id{[0-9]+}', AuthMiddleware, async c => {
+     ^
+error: The constant "usuario" must be initialized
+    at /home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/routes/userRotas.ts:14:1
+
+38 |         }, "HS256")}` }, info.code)
+             ^
+error: Unexpected }
+    at /home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/routes/userRotas.ts:38:9
+14 | usuario.get('/:id{[0-9]+}', AuthMiddleware, async c => {
+     ^
+error: "usuario" has already been declared
+    at /home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/routes/userRotas.ts:14:1
+
+8 | const usuario = new Hono()
+          ^
+note: "usuario" was originally declared here
+   at /home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/routes/userRotas.ts:8:7
+
+14 | usuario.get('/:id{[0-9]+}', AuthMiddleware, async c => {
+            ^
+error: Expected ";" but found "."
+    at /home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/routes/userRotas.ts:14:8
+
+14 | usuario.get('/:id{[0-9]+}', AuthMiddleware, async c => {
+     ^
+error: The constant "usuario" must be initialized
+    at /home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/routes/userRotas.ts:14:1
+
+38 |         }, "HS256")}` }, info.code)
+             ^
+error: Unexpected }
+    at /home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/routes/userRotas.ts:38:9
+12 | const JW
+           ^
+error: The constant "JW" must be initialized
+    at /home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/routes/userRotas.ts:12:7
+
+38 |         }, "HS256")}` }, info.code)
+             ^
+error: Unexpected }
+    at /home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/routes/userRotas.ts:38:9
+12 | const JWT
+           ^
+error: The constant "JWT" must be initialized
+    at /home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/routes/userRotas.ts:12:7
+
+38 |         }, "HS256")}` }, info.code)
+             ^
+error: Unexpected }
+    at /home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/routes/userRotas.ts:38:9
+12 | const JWT
+           ^
+error: The constant "JWT" must be initialized
+    at /home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/routes/userRotas.ts:12:7
+
+38 |         }, "HS256")}` }, info.code)
+             ^
+error: Unexpected }
+    at /home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/routes/userRotas.ts:38:9
+38 |         }, "HS256")}` }, info.code)
+             ^
+error: Unexpected }
+    at /home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/routes/userRotas.ts:38:9
+38 |         }, "HS256")}` }, info.code)
+             ^
+error: Unexpected }
+    at /home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/routes/userRotas.ts:38:9
+38 |         }, "HS256")}` }, info.code)
+             ^
+error: Unexpected }
+    at /home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/routes/userRotas.ts:38:9
+38 |         }, "HS256")}` }, info.code)
+             ^
+error: Unexpected }
+    at /home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/routes/userRotas.ts:38:9
+38 |         }, "HS256")}` }, info.code)
+             ^
+error: Unexpected }
+    at /home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/routes/userRotas.ts:38:9
+38 |         }, "HS256")}` }, info.code)
+             ^
+error: Unexpected }
+    at /home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/routes/userRotas.ts:38:9
+38 |         }, "HS256")}` }, info.code)
+             ^
+error: Unexpected }
+    at /home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/routes/userRotas.ts:38:9
+38 |         }, "HS256")}` }, info.code)
+             ^
+error: Unexpected }
+    at /home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/routes/userRotas.ts:38:9
+38 |         }, "HS256")}` }, info.code)
+             ^
+error: Unexpected }
+    at /home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/routes/userRotas.ts:38:9
+38 |         }, "HS256")}` }, info.code)
+             ^
+error: Unexpected }
+    at /home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/routes/userRotas.ts:38:9
+38 |         }, "HS256")}` }, info.code)
+             ^
+error: Unexpected }
+    at /home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/routes/userRotas.ts:38:9
+38 |         }, "HS256")}` }, info.code)
+             ^
+error: Unexpected }
+    at /home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/routes/userRotas.ts:38:9
+38 |         }, "HS256")}` }, info.code)
+             ^
+error: Unexpected }
+    at /home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/routes/userRotas.ts:38:9
+38 |         }, "HS256")}` }, info.code)
+             ^
+error: Unexpected }
+    at /home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/routes/userRotas.ts:38:9
+38 |         }, "HS256")}` }, info.code)
+             ^
+error: Unexpected }
+    at /home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/routes/userRotas.ts:38:9
+38 |         },, "HS256")}` }, info.code)
+             ^
+error: Unexpected }
+    at /home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/routes/userRotas.ts:38:9
+38 |         },,  "HS256")}` }, info.code)
+             ^
+error: Unexpected }
+    at /home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/routes/userRotas.ts:38:9
+38 |         },, "HS256")}` }, info.code)
+             ^
+error: Unexpected }
+    at /home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/routes/userRotas.ts:38:9
+38 |         }, , "HS256")}` }, info.code)
+             ^
+error: Unexpected }
+    at /home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/routes/userRotas.ts:38:9
+38 |         }, JW, "HS256")}` }, info.code)
+             ^
+error: Unexpected }
+    at /home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/routes/userRotas.ts:38:9
+38 |         }, JWT, "HS256")}` }, info.code)
+             ^
+error: Unexpected }
+    at /home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/routes/userRotas.ts:38:9
+37 |             userPayload: in
+                              ^
+error: Unexpected in
+    at /home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/routes/userRotas.ts:37:26
+Started development server: http://localhost:3000
+38 |         }, JWT, "HS256")}` }, info.code)
+             ^
+error: Expected identifier but found "}"
+    at /home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/routes/userRotas.ts:38:9
+
+38 |         }, JWT, "HS256")}` }, info.code)
+                ^
+error: Expected "}" but found "JWT"
+    at /home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/routes/userRotas.ts:38:12
+Started development server: http://localhost:3000
+Started development server: http://localhost:3000
+Started development server: http://localhost:3000
+Started development server: http://localhost:3000
+38 |         }, JWT, "HS256")}` }, info.code)
+             ^
+error: Expected identifier but found "}"
+    at /home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/routes/userRotas.ts:38:9
+
+38 |         }, JWT, "HS256")}` }, info.code)
+                ^
+error: Expected "}" but found "JWT"
+    at /home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/routes/userRotas.ts:38:12
+Started development server: http://localhost:3000
+37 |             userPayload: info.info![]
+                                         ^
+error: Unexpected ]
+    at /home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/routes/userRotas.ts:37:37
+Started development server: http://localhost:3000
+37 |             userPayload: info.info![]
+                                         ^
+error: Unexpected ]
+    at /home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/routes/userRotas.ts:37:37
+Started development server: http://localhost:3000
+38 |         }, JWT, "HS256")}` }, info.code)
+             ^
+error: Expected identifier but found "}"
+    at /home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/routes/userRotas.ts:38:9
+
+38 |         }, JWT, "HS256")}` }, info.code)
+                ^
+error: Expected "}" but found "JWT"
+    at /home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/routes/userRotas.ts:38:12
+Started development server: http://localhost:3000
+Started development server: http://localhost:3000
+Started development server: http://localhost:3000
+Started development server: http://localhost:3000
+Started development server: http://localhost:3000
+Started development server: http://localhost:3000
+39 |         }, JWT, "HS256")}` }, info.code)
+             ^
+error: Unexpected }
+    at /home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/routes/userRotas.ts:39:9
+39 |         }, JWT, "HS256")}` }, info.code)
+             ^
+error: Unexpected }
+    at /home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/routes/userRotas.ts:39:9
+Started development server: http://localhost:3000
+Started development server: http://localhost:3000
+39 |         }, JWT, "HS256")}` }, info.code)
+             ^
+error: Expected identifier but found "}"
+    at /home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/routes/userRotas.ts:39:9
+
+39 |         }, JWT, "HS256")}` }, info.code)
+                ^
+error: Expected "}" but found "JWT"
+    at /home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/routes/userRotas.ts:39:12
+Started development server: http://localhost:3000
+Started development server: http://localhost:3000
+Started development server: http://localhost:3000
+Started development server: http://localhost:3000
+Started development server: http://localhost:3000
+38 |             exp: Math.()
+                           ^
+error: Expected identifier but found "("
+    at /home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/routes/userRotas.ts:38:23
+Started development server: http://localhost:3000
+Started development server: http://localhost:3000
+Started development server: http://localhost:3000
+Started development server: http://localhost:3000
+Started development server: http://localhost:3000
+Started development server: http://localhost:3000
+38 |             exp: Math.floor(Date.)
+                                      ^
+error: Expected identifier but found ")"
+    at /home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/routes/userRotas.ts:38:34
+
+39 |         }, JWT, "HS256")}` }, info.code)
+                              ^
+error: Unterminated string literal
+    at /home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/routes/userRotas.ts:39:26
+Started development server: http://localhost:3000
+Started development server: http://localhost:3000
+Started development server: http://localhost:3000
+Started development server: http://localhost:3000
+38 |             exp: Math.floor(Date.now() /)
+                                             ^
+error: Unexpected )
+    at /home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/routes/userRotas.ts:38:41
+Started development server: http://localhost:3000
+39 |         }, JWT, "HS256")}` }, info.code)
+             ^
+error: Unexpected }
+    at /home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/routes/userRotas.ts:39:9
+Started development server: http://localhost:3000
+Started development server: http://localhost:3000
+39 |         }, JWT, "HS256")}` }, info.code)
+             ^
+error: Unexpected }
+    at /home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/routes/userRotas.ts:39:9
+39 |         }, JWT, "HS256")}` }, info.code)
+             ^
+error: Unexpected }
+    at /home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/routes/userRotas.ts:39:9
+Started development server: http://localhost:3000
+Started development server: http://localhost:3000
+39 |         }, JWT, "HS256")}` }, info.code)
+             ^
+error: Unexpected }
+    at /home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/routes/userRotas.ts:39:9
+39 |         }, JWT, "HS256")}` }, info.code)
+             ^
+error: Unexpected }
+    at /home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/routes/userRotas.ts:39:9
+Started development server: http://localhost:3000
+39 |         }, JWT, "HS256")}` }, info.code)
+             ^
+error: Unexpected }
+    at /home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/routes/userRotas.ts:39:9
+39 |         }, JWT, "HS256")}` }, info.code)
+             ^
+error: Unexpected }
+    at /home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/routes/userRotas.ts:39:9
+Started development server: http://localhost:3000
+Started development server: http://localhost:3000
+Started development server: http://localhost:3000
+12 | ]
+     ^
+error: Unexpected ]
+    at /home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/routes/adminRotas.ts:12:1
+Started development server: http://localhost:3000
+11 | const tabela = 'admin
+                    ^
+error: Unterminated string literal
+    at /home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/routes/adminRotas.ts:11:16
+Started development server: http://localhost:3000
+Started development server: http://localhost:3000
+ 7 | 
+ 8 | const admin = new Hono()
+ 9 | 
+10 | const db = Postgre.getInstance()
+11 | const tabela = 'admin'
+12 | cons
+     ^
+ReferenceError: cons is not defined
+      at /home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/routes/adminRotas.ts:12:1
+      at loadAndEvaluateModule (2:1)
+14 | admin.get('/:id{[0-9]+}', AuthMiddleware, async c => {
+     ^
+error: "admin" has already been declared
+    at /home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/routes/adminRotas.ts:14:1
+
+8 | const admin = new Hono()
+          ^
+note: "admin" was originally declared here
+   at /home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/routes/adminRotas.ts:8:7
+
+14 | admin.get('/:id{[0-9]+}', AuthMiddleware, async c => {
+          ^
+error: Expected ";" but found "."
+    at /home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/routes/adminRotas.ts:14:6
+
+14 | admin.get('/:id{[0-9]+}', AuthMiddleware, async c => {
+     ^
+error: The constant "admin" must be initialized
+    at /home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/routes/adminRotas.ts:14:1
+12 | const J
+           ^
+error: The constant "J" must be initialized
+    at /home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/routes/adminRotas.ts:12:7
+12 | const JW
+           ^
+error: The constant "JW" must be initialized
+    at /home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/routes/adminRotas.ts:12:7
+12 | const JWT
+           ^
+error: The constant "JWT" must be initialized
+    at /home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/routes/adminRotas.ts:12:7
+12 | const JWT
+           ^
+error: The constant "JWT" must be initialized
+    at /home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/routes/adminRotas.ts:12:7
+Started development server: http://localhost:3000
+ 7 | 
+ 8 | const admin = new Hono()
+ 9 | 
+10 | const db = Postgre.getInstance()
+11 | const tabela = 'admin'
+12 | const JWT = proc
+                 ^
+ReferenceError: proc is not defined
+      at /home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/routes/adminRotas.ts:12:13
+      at loadAndEvaluateModule (2:1)
+ 7 | 
+ 8 | const admin = new Hono()
+ 9 | 
+10 | const db = Postgre.getInstance()
+11 | const tabela = 'admin'
+12 | const JWT = proce
+                 ^
+ReferenceError: proce is not defined
+      at /home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/routes/adminRotas.ts:12:13
+      at loadAndEvaluateModule (2:1)
+Started development server: http://localhost:3000
+ 9 | 
+10 | const db = Postgre.getInstance()
+11 | const tabela = 'admin'
+12 | const JWT = process.
+13 | 
+14 | admin.get('/:id{[0-9]+}', AuthMiddleware, async c => {
+     ^
+TypeError: undefined is not an object (evaluating 'process.admin.get')
+      at /home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/routes/adminRotas.ts:14:1
+      at loadAndEvaluateModule (2:1)
+Started development server: http://localhost:3000
+Started development server: http://localhost:3000
+ 9 | 
+10 | const db = Postgre.getInstance()
+11 | const tabela = 'admin'
+12 | const JWT = process.env.
+13 | 
+14 | admin.get('/:id{[0-9]+}', AuthMiddleware, async c => {
+     ^
+TypeError: undefined is not an object (evaluating 'process.env.admin.get')
+      at /home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/routes/adminRotas.ts:14:1
+      at loadAndEvaluateModule (2:1)
+Started development server: http://localhost:3000
+Started development server: http://localhost:3000
+Started development server: http://localhost:3000
+Started development server: http://localhost:3000
+Started development server: http://localhost:3000
+Started development server: http://localhost:3000
+24 | export  AuthMiddleware
+             ^
+error: Unexpected AuthMiddleware
+    at /home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/AuthMiddleware.ts:24:9
+24 | export AuthMiddleware
+            ^
+error: Unexpected AuthMiddleware
+    at /home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/AuthMiddleware.ts:24:8
+24 | export AuthMiddleware
+            ^
+error: Unexpected AuthMiddleware
+    at /home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/AuthMiddleware.ts:24:8
+24 | export
+            ^
+error: Unexpected end of file
+    at /home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/AuthMiddleware.ts:24:8
+1 | })
+2 | {
+    ^
+SyntaxError: Missing 'default' export in module '/home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/AuthMiddleware.ts'.
+      at loadAndEvaluateModule (2:1)
+1 | })
+2 | {
+    ^
+SyntaxError: Missing 'default' export in module '/home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/AuthMiddleware.ts'.
+      at loadAndEvaluateModule (2:1)
+1 | })
+2 | {
+    ^
+SyntaxError: Missing 'default' export in module '/home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/AuthMiddleware.ts'.
+      at loadAndEvaluateModule (2:1)
+7 | econst AuthMiddleware: MiddlewareHandler = createMiddleware( async (c, next) => {
+           ^
+error: Expected ";" but found "AuthMiddleware"
+    at /home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/AuthMiddleware.ts:7:8
+
+7 | econst AuthMiddleware: MiddlewareHandler = createMiddleware( async (c, next) => {
+                         ^
+error: Unexpected :
+    at /home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/AuthMiddleware.ts:7:22
+7 | exconst AuthMiddleware: MiddlewareHandler = createMiddleware( async (c, next) => {
+            ^
+error: Expected ";" but found "AuthMiddleware"
+    at /home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/AuthMiddleware.ts:7:9
+
+7 | exconst AuthMiddleware: MiddlewareHandler = createMiddleware( async (c, next) => {
+                          ^
+error: Unexpected :
+    at /home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/AuthMiddleware.ts:7:23
+7 | exporconst AuthMiddleware: MiddlewareHandler = createMiddleware( async (c, next) => {
+               ^
+error: Expected ";" but found "AuthMiddleware"
+    at /home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/AuthMiddleware.ts:7:12
+
+7 | exporconst AuthMiddleware: MiddlewareHandler = createMiddleware( async (c, next) => {
+                             ^
+error: Unexpected :
+    at /home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/AuthMiddleware.ts:7:26
+1 | })
+2 | {
+    ^
+SyntaxError: module '/home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/AuthMiddleware.ts' does not have an export named 'default'. Did you mean 'AuthMiddleware'?
+      at loadAndEvaluateModule (2:1)
+1 | })
+2 | {
+    ^
+SyntaxError: module '/home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/AuthMiddleware.ts' does not have an export named 'default'. Did you mean 'AuthMiddleware'?
+      at loadAndEvaluateModule (2:1)
+1 | })
+2 | {
+    ^
+SyntaxError: Missing 'default' export in module '/home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/AuthMiddleware.ts'.
+      at loadAndEvaluateModule (2:1)
+1 | })
+2 | {
+    ^
+SyntaxError: Missing 'default' export in module '/home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/AuthMiddleware.ts'.
+      at loadAndEvaluateModule (2:1)
+1 | })
+2 | {
+    ^
+SyntaxError: Missing 'default' export in module '/home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/AuthMiddleware.ts'.
+      at loadAndEvaluateModule (2:1)
+1 | })
+2 | {
+    ^
+SyntaxError: Missing 'default' export in module '/home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/AuthMiddleware.ts'.
+      at loadAndEvaluateModule (2:1)
+1 | })
+2 | {
+    ^
+SyntaxError: Missing 'default' export in module '/home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/AuthMiddleware.ts'.
+      at loadAndEvaluateModule (2:1)
+1 | })
+2 | {
+    ^
+SyntaxError: Missing 'default' export in module '/home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/AuthMiddleware.ts'.
+      at loadAndEvaluateModule (2:1)
+1 | })
+2 | {
+    ^
+SyntaxError: Missing 'default' export in module '/home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/AuthMiddleware.ts'.
+      at loadAndEvaluateModule (2:1)
+1 | })
+2 | {
+    ^
+SyntaxError: Missing 'default' export in module '/home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/AuthMiddleware.ts'.
+      at loadAndEvaluateModule (2:1)
+1 | })
+2 | {
+    ^
+SyntaxError: Missing 'default' export in module '/home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/AuthMiddleware.ts'.
+      at loadAndEvaluateModule (2:1)
+1 | })
+2 | {
+    ^
+SyntaxError: Missing 'default' export in module '/home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/AuthMiddleware.ts'.
+      at loadAndEvaluateModule (2:1)
+24 | export
+          ^
+error: Unexpected end of file
+    at /home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/AuthMiddleware.ts:24:6
+24 | export
+           ^
+error: Unexpected end of file
+    at /home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/AuthMiddleware.ts:24:7
+24 | export a
+            ^
+error: Unexpected a
+    at /home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/AuthMiddleware.ts:24:8
+24 | export
+           ^
+error: Unexpected end of file
+    at /home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/AuthMiddleware.ts:24:7
+24 | export co
+            ^
+error: Unexpected co
+    at /home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/AuthMiddleware.ts:24:8
+24 | export const
+                 ^
+error: Expected identifier but found end of file
+    at /home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/AuthMiddleware.ts:24:13
+
+24 | export const
+                 ^
+error: This constant must be initialized
+    at /home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/AuthMiddleware.ts:24:13
+24 | export const A
+                  ^
+error: The constant "A" must be initialized
+    at /home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/AuthMiddleware.ts:24:14
+24 | export const Auth
+                  ^
+error: The constant "Auth" must be initialized
+    at /home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/AuthMiddleware.ts:24:14
+24 | export const AuthM
+                  ^
+error: The constant "AuthM" must be initialized
+    at /home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/AuthMiddleware.ts:24:14
+24 | export const AuthMiddle
+                  ^
+error: The constant "AuthMiddle" must be initialized
+    at /home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/AuthMiddleware.ts:24:14
+24 | export const AuthMiddlewa
+                  ^
+error: The constant "AuthMiddlewa" must be initialized
+    at /home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/AuthMiddleware.ts:24:14
+24 | export const AuthMiddleware
+                  ^
+error: The constant "AuthMiddleware" must be initialized
+    at /home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/AuthMiddleware.ts:24:14
+24 | export const AuthMiddlewareA
+                  ^
+error: The constant "AuthMiddlewareA" must be initialized
+    at /home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/AuthMiddleware.ts:24:14
+24 | export const AuthMiddlewareAdmin
+                  ^
+error: The constant "AuthMiddlewareAdmin" must be initialized
+    at /home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/AuthMiddleware.ts:24:14
+1 | })
+2 | {
+    ^
+SyntaxError: Missing 'default' export in module '/home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/AuthMiddleware.ts'.
+      at loadAndEvaluateModule (2:1)
+1 | })
+2 | {
+    ^
+SyntaxError: Missing 'default' export in module '/home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/AuthMiddleware.ts'.
+      at loadAndEvaluateModule (2:1)
+1 | })
+2 | {
+    ^
+SyntaxError: Missing 'default' export in module '/home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/AuthMiddleware.ts'.
+      at loadAndEvaluateModule (2:1)
+1 | })
+2 | {
+    ^
+SyntaxError: Missing 'default' export in module '/home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/AuthMiddleware.ts'.
+      at loadAndEvaluateModule (2:1)
+1 | })
+2 | {
+    ^
+SyntaxError: Missing 'default' export in module '/home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/AuthMiddleware.ts'.
+      at loadAndEvaluateModule (2:1)
+1 | })
+2 | {
+    ^
+SyntaxError: Missing 'default' export in module '/home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/AuthMiddleware.ts'.
+      at loadAndEvaluateModule (2:1)
+1 | })
+2 | {
+    ^
+SyntaxError: Missing 'default' export in module '/home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/AuthMiddleware.ts'.
+      at loadAndEvaluateModule (2:1)
+1 | })
+2 | {
+    ^
+SyntaxError: Missing 'default' export in module '/home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/AuthMiddleware.ts'.
+      at loadAndEvaluateModule (2:1)
+5 | import  from "../AuthMiddleware";
+                 ^
+error: Expected "from" but found ""../AuthMiddleware""
+    at /home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/routes/adminRotas.ts:5:14
+1 | })
+2 | {
+    ^
+SyntaxError: Missing 'default' export in module '/home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/AuthMiddleware.ts'.
+      at loadAndEvaluateModule (2:1)
+1 | })
+2 | {
+    ^
+SyntaxError: Missing 'default' export in module '/home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/AuthMiddleware.ts'.
+      at loadAndEvaluateModule (2:1)
+1 | })
+2 | {
+    ^
+SyntaxError: Missing 'default' export in module '/home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/AuthMiddleware.ts'.
+      at loadAndEvaluateModule (2:1)
+1 | })
+2 | {
+    ^
+SyntaxError: Missing 'default' export in module '/home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/AuthMiddleware.ts'.
+      at loadAndEvaluateModule (2:1)
+1 | })
+2 | {
+    ^
+SyntaxError: Missing 'default' export in module '/home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/AuthMiddleware.ts'.
+      at loadAndEvaluateModule (2:1)
+1 | })
+2 | {
+    ^
+SyntaxError: Missing 'default' export in module '/home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/AuthMiddleware.ts'.
+      at loadAndEvaluateModule (2:1)
+1 | })
+2 | {
+    ^
+SyntaxError: Missing 'default' export in module '/home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/AuthMiddleware.ts'.
+      at loadAndEvaluateModule (2:1)
+1 | })
+2 | {
+    ^
+SyntaxError: Missing 'default' export in module '/home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/AuthMiddleware.ts'.
+      at loadAndEvaluateModule (2:1)
+1 | })
+2 | {
+    ^
+SyntaxError: Missing 'default' export in module '/home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/AuthMiddleware.ts'.
+      at loadAndEvaluateModule (2:1)
+1 | })
+2 | {
+    ^
+SyntaxError: Missing 'default' export in module '/home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/AuthMiddleware.ts'.
+      at loadAndEvaluateModule (2:1)
+5 | import (AuthMiddlewareAdmin from "../AuthMiddleware"
+                                ^
+error: Expected ")" but found "from"
+    at /home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/routes/prodRotas.ts:5:29
+
+5 | import (AuthMiddlewareAdmin from "../AuthMiddleware"
+                                     ^
+error: Expected ";" but found ""../AuthMiddleware""
+    at /home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/routes/prodRotas.ts:5:34
+5 | import ( AuthMiddlewareAdmin from "../AuthMiddleware"
+                                 ^
+error: Expected ")" but found "from"
+    at /home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/routes/prodRotas.ts:5:30
+
+5 | import ( AuthMiddlewareAdmin from "../AuthMiddleware"
+                                      ^
+error: Expected ";" but found ""../AuthMiddleware""
+    at /home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/routes/prodRotas.ts:5:35
+1 | })
+2 | {
+    ^
+SyntaxError: Missing 'default' export in module '/home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/AuthMiddleware.ts'.
+      at loadAndEvaluateModule (2:1)
+5 | import {AuthMiddlewareAdmin from "../AuthMiddleware"
+                                ^
+error: Expected "}" but found "from"
+    at /home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/routes/prodRotas.ts:5:29
+
+5 | import {AuthMiddlewareAdmin from "../AuthMiddleware"
+                                     ^
+error: Expected "from" but found ""../AuthMiddleware""
+    at /home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/routes/prodRotas.ts:5:34
+1 | })
+2 | {
+    ^
+SyntaxError: Missing 'default' export in module '/home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/AuthMiddleware.ts'.
+      at loadAndEvaluateModule (2:1)
+1 | })
+2 | {
+    ^
+SyntaxError: Missing 'default' export in module '/home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/AuthMiddleware.ts'.
+      at loadAndEvaluateModule (2:1)
+1 | })
+2 | {
+    ^
+SyntaxError: Missing 'default' export in module '/home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/AuthMiddleware.ts'.
+      at loadAndEvaluateModule (2:1)
+1 | })
+2 | {
+    ^
+SyntaxError: Missing 'default' export in module '/home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/AuthMiddleware.ts'.
+      at loadAndEvaluateModule (2:1)
+1 | })
+2 | {
+    ^
+SyntaxError: Missing 'default' export in module '/home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/AuthMiddleware.ts'.
+      at loadAndEvaluateModule (2:1)
+1 | })
+2 | {
+    ^
+SyntaxError: Missing 'default' export in module '/home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/AuthMiddleware.ts'.
+      at loadAndEvaluateModule (2:1)
+1 | })
+2 | {
+    ^
+SyntaxError: Missing 'default' export in module '/home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/AuthMiddleware.ts'.
+      at loadAndEvaluateModule (2:1)
+5 | import {AuthMiddlewareAdmin from "../AuthMiddleware"
+                                ^
+error: Expected "}" but found "from"
+    at /home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/routes/pagRotas.ts:5:29
+
+5 | import {AuthMiddlewareAdmin from "../AuthMiddleware"
+                                     ^
+error: Expected "from" but found ""../AuthMiddleware""
+    at /home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/routes/pagRotas.ts:5:34
+5 | import { AuthMiddlewareAdmin from "../AuthMiddleware"
+                                 ^
+error: Expected "}" but found "from"
+    at /home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/routes/pagRotas.ts:5:30
+
+5 | import { AuthMiddlewareAdmin from "../AuthMiddleware"
+                                      ^
+error: Expected "from" but found ""../AuthMiddleware""
+    at /home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/routes/pagRotas.ts:5:35
+1 | })
+2 | {
+    ^
+SyntaxError: Missing 'default' export in module '/home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/AuthMiddleware.ts'.
+      at loadAndEvaluateModule (2:1)
+1 | })
+2 | {
+    ^
+SyntaxError: Missing 'default' export in module '/home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/AuthMiddleware.ts'.
+      at loadAndEvaluateModule (2:1)
+1 | })
+2 | {
+    ^
+SyntaxError: Missing 'default' export in module '/home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/AuthMiddleware.ts'.
+      at loadAndEvaluateModule (2:1)
+1 | })
+2 | {
+    ^
+SyntaxError: Missing 'default' export in module '/home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/AuthMiddleware.ts'.
+      at loadAndEvaluateModule (2:1)
+1 | })
+2 | {
+    ^
+SyntaxError: Missing 'default' export in module '/home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/AuthMiddleware.ts'.
+      at loadAndEvaluateModule (2:1)
+1 | })
+2 | {
+    ^
+SyntaxError: Missing 'default' export in module '/home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/AuthMiddleware.ts'.
+      at loadAndEvaluateModule (2:1)
+1 | })
+2 | {
+    ^
+SyntaxError: Missing 'default' export in module '/home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/AuthMiddleware.ts'.
+      at loadAndEvaluateModule (2:1)
+1 | })
+2 | {
+    ^
+SyntaxError: Missing 'default' export in module '/home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/AuthMiddleware.ts'.
+      at loadAndEvaluateModule (2:1)
+5 | import {AuthMiddleware from "../AuthMiddleware"
+                           ^
+error: Expected "}" but found "from"
+    at /home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/routes/userRotas.ts:5:24
+
+5 | import {AuthMiddleware from "../AuthMiddleware"
+                                ^
+error: Expected "from" but found ""../AuthMiddleware""
+    at /home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/routes/userRotas.ts:5:29
+5 | import { AuthMiddleware from "../AuthMiddleware"
+                            ^
+error: Expected "}" but found "from"
+    at /home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/routes/userRotas.ts:5:25
+
+5 | import { AuthMiddleware from "../AuthMiddleware"
+                                 ^
+error: Expected "from" but found ""../AuthMiddleware""
+    at /home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/routes/userRotas.ts:5:30
+5 | import { AuthMiddleware  from "../AuthMiddleware"
+                             ^
+error: Expected "}" but found "from"
+    at /home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/routes/userRotas.ts:5:26
+
+5 | import { AuthMiddleware  from "../AuthMiddleware"
+                                  ^
+error: Expected "from" but found ""../AuthMiddleware""
+    at /home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/routes/userRotas.ts:5:31
+1 | })
+2 | {
+    ^
+SyntaxError: Export named 'AuthMiddleware' not found in module '/home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/AuthMiddleware.ts'.
+      at loadAndEvaluateModule (2:1)
+ 9 | 
+10 | const db = Postgre.getInstance()
+11 | const tabela = 'usuario'
+12 | const JWT = process.env.JWT!
+13 | 
+14 | usuario.get('/:id{[0-9]+}', AuthMiddleware, async c => {
+                                 ^
+ReferenceError: AuthMiddleware is not defined
+      at /home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/routes/userRotas.ts:14:29
+      at loadAndEvaluateModule (2:1)
+ 9 | 
+10 | const db = Postgre.getInstance()
+11 | const tabela = 'usuario'
+12 | const JWT = process.env.JWT!
+13 | 
+14 | usuario.get('/:id{[0-9]+}', AuthMiddleware, async c => {
+                                 ^
+ReferenceError: AuthMiddleware is not defined
+      at /home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/routes/userRotas.ts:14:29
+      at loadAndEvaluateModule (2:1)
+ 9 | 
+10 | const db = Postgre.getInstance()
+11 | const tabela = 'usuario'
+12 | const JWT = process.env.JWT!
+13 | 
+14 | usuario.get('/:id{[0-9]+}', AuthMiddleware, async c => {
+                                 ^
+ReferenceError: AuthMiddleware is not defined
+      at /home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/routes/userRotas.ts:14:29
+      at loadAndEvaluateModule (2:1)
+15 |     const id = Number(c.req.param('id'))
+16 |     const info = await db.executarLer({ id: id }, tabela)
+17 |     return c.json(info, info.code)
+18 | })
+19 | 
+20 |     .get('/all', AuthMiddleware, async c => {
+                      ^
+ReferenceError: AuthMiddleware is not defined
+      at /home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/routes/userRotas.ts:20:18
+      at loadAndEvaluateModule (2:1)
+37 |             userPayload: info.info![0],
+38 |             exp: Math.floor(Date.now() / 1000) + 60 * 60 * 24
+39 |         }, JWT, "HS256")}` }, info.code)
+40 |     })
+41 | 
+42 |     .put('/update', AuthMiddleware, zValidator('json', usuarioSchema), async c => {
+                         ^
+ReferenceError: AuthMiddleware is not defined
+      at /home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/routes/userRotas.ts:42:21
+      at loadAndEvaluateModule (2:1)
+43 |         const obj = c.req.valid('json')
+44 |         const info = await db.executarAtualizar(obj, tabela)
+45 |         return c.json(info, info.code)
+46 |     })
+47 | 
+48 |     .delete('/delete/:id{[0-9]+}', AuthMiddleware, async c => {
+                                        ^
+ReferenceError: AuthMiddleware is not defined
+      at /home/polo/pasta-eduardo/e-commerce/e-commerce-back/src/routes/userRotas.ts:48:36
+      at loadAndEvaluateModule (2:1)
+Started development server: http://localhost:3000
+error: script "dev" was terminated by signal SIGTERM (Polite quit request)
+$ bun run --watch index.ts
+Started development server: http://localhost:3000
+Started development server: http://localhost:3000
+Started development server: http://localhost:3000
+error: script "dev" was terminated by signal SIGTERM (Polite quit request)
