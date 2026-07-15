@@ -5,8 +5,8 @@ import { SetReactFunction } from '../types/ReactTypes';
 import { validateEmail, validatePassword } from '../utils/ValidateCredentials';
 
 //Um React Component, é apenas uma parte do site, um componente dele
-export default function AdminSignContainer(props: { set: SetReactFunction<admin | undefined> }) {
-    const { set } = props
+export default function AdminSignContainer(props: { set: SetReactFunction<admin | undefined>, errorMessage?:string }) {
+    const { set, errorMessage } = props
     const nomeRef = useRef<HTMLInputElement>(null)
     const emailRef = useRef<HTMLInputElement>(null)
     const senhaRef = useRef<HTMLInputElement>(null)
@@ -44,11 +44,12 @@ export default function AdminSignContainer(props: { set: SetReactFunction<admin 
                 <input type="text" ref={nomeRef} />
                 <label htmlFor="input">Email</label>
                 <input type="email" ref={emailRef} onChange={emailHandler}/>
-                <p id="email-error" ref={pEmailErr}></p>
+                <p className="error-text" ref={pEmailErr}></p>
                 <label htmlFor="input">Senha</label>
                 <input type="password" ref={senhaRef} onChange={passwordHandler}/>
-                <p id='pass-error' ref={pPassErr}></p>
+                <p className='error-text' ref={pPassErr}></p>
                 <input type="submit" value='Sign in' />
+                <p className="error-text">{errorMessage}</p>
             </form>
         </div>
     )

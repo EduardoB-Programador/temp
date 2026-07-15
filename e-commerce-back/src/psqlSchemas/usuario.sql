@@ -1,8 +1,8 @@
-CREATE TABLE admin(
+CREATE TABLE usuario(
     id SERIAL PRIMARY KEY,
     endereco VARCHAR NOT NULL,
     cpf VARCHAR UNIQUE NOT NULL,
     email VARCHAR UNIQUE NOT NULL,
-    senha VARCHAR NOT NULL
+    senha VARCHAR NOT NULL,
     ativo BOOLEAN DEFAULT 'TRUE'
 )
