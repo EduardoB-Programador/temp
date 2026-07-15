@@ -8,6 +8,7 @@ import Login from './pages/Login.tsx'
 import SignIn from './pages/SignIn.tsx'
 import AdminLog from './pages/AdminLog.tsx'
 import AdminSign from './pages/AdminSign.tsx'
+import ErrorPage from './pages/ErrorPage.tsx'
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
@@ -22,6 +23,8 @@ createRoot(document.getElementById('root')!).render(
         <Route element={<AdminSign />} path='/admin/sign' />
 
         <Route element={<Sobre />} path='/sobre' />
+
+        <Route element={<ErrorPage />} path='*'/>
       </Routes>
     </BrowserRouter>
   </StrictMode>

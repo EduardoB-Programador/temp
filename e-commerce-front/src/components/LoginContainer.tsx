@@ -29,7 +29,7 @@ export default function LoginContainer(props: { set: SetReactFunction<usuario| u
 
     const passwordHandler = () => {
         if (!validatePassword(senhaRef.current!.value))
-            pPassErr.current!.innerText = 'password must contain 8 characters, at least 1 uppercase and 1 lowercase letter and a number'
+            pPassErr.current!.innerText = 'password must contain 8 characters, at least 1 letter and a number'
         else
             pPassErr.current!.innerText = ''
     }
