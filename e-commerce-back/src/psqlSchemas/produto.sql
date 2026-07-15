@@ -1,4 +1,4 @@
-CREATE TABLE admin(
+CREATE TABLE produto(
     id SERIAL PRIMARY KEY,
     nome VARCHAR UNIQUE NOT NULL,
     preco NUMERIC(5,2) NOT NULL,

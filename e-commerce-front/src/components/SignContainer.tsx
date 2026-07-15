@@ -4,8 +4,8 @@ import { SetReactFunction } from '../types/ReactTypes'
 import { usuario } from '../types/ModelTypes'
 import { validateCPF, validateEmail, validatePassword } from '../utils/ValidateCredentials'
 
-export default function SignContainer(props: { set: SetReactFunction<usuario | undefined>, operation: string }) {
-    const { set, operation } = props
+export default function SignContainer(props: { set: SetReactFunction<usuario | undefined>, errorMessage?:string }) {
+    const { set, errorMessage } = props
     const enderecoRef = useRef<HTMLInputElement>(null)
     const emailRef = useRef<HTMLInputElement>(null)
     const senhaRef = useRef<HTMLInputElement>(null)
@@ -51,16 +51,17 @@ export default function SignContainer(props: { set: SetReactFunction<usuario | u
             <form onSubmit={submitForm}>
                 <label htmlFor="input">Email</label>
                 <input type="email" ref={emailRef} onChange={emailHandler}/>
-                <p id="email-error" ref={pEmailErr}></p>
+                <p className="error-text" ref={pEmailErr}></p>
                 <label htmlFor="input">Senha</label>
                 <input type="password" ref={senhaRef} onChange={passwordHandler}/>
-                <p id="pass-error" ref={pPassErr}></p>
+                <p className="error-text" ref={pPassErr}></p>
                 <label htmlFor="input">Endereco</label>
                 <input type="text" ref={enderecoRef} />
                 <label htmlFor="input">CPF</label>
                 <input type="text" ref={CPFRef} onChange={CPFHandler}/>
-                <p id="cpf-error" ref={pCpfErr}></p>
-                <input type="submit" value={operation} />
+                <p className="error-text" ref={pCpfErr}></p>
+                <input type="submit" value="Sign in" />
+                <p className="error-text">{errorMessage}</p>
             </form>
         </div>
     )

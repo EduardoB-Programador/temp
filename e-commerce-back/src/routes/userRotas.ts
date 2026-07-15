@@ -33,6 +33,14 @@ usuario.get('/:id{[0-9]+}', AuthMiddlewareUser, async c => {
         const info = await db.executarLer(obj, tabela)
         if (info.status === 'erro')
             return c.json(info, info.code)
+
+        try {
+            if (!(info.info![0].email === obj.email && info.info![0].senha === obj.senha))
+                return c.json({ status: 'erro', mensagem: 'credenciais incorretas ou usuario inexistente', code: 401 }, 401)
+        } catch {
+            return c.json({ status: 'erro', mensagem: 'credenciais incorretas ou usuario inexistente', code: 401 }, 401)
+        }
+
         return c.json({ ...info, token: `Bearer ${await sign({
             userPayload: info.info![0],
             exp: Math.floor(Date.now() / 1000) + 60 * 60 * 24

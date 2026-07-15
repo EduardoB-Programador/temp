@@ -5,9 +5,15 @@ import '../styles/Login.css'
 import { usuario } from '../types/ModelTypes'
 import LoginContainer from '../components/LoginContainer'
 import { validateUser } from '../utils/ValidateCredentials'
+import { BackResponse } from '../types/APITypes'
+import { useNavigate } from 'react-router'
+import { useCookies } from 'react-cookie'
 
 export default function Login() {
     const [credentialsLog, setCredentialsLog] = useState<usuario>()
+    const [errorResponseMessage, setErrorResponseMessage] = useState<string>()
+    const navigate = useNavigate()
+    const [, setCookie] = useCookies(['token'])
 
     useEffect(() => {
         if (!credentialsLog)
@@ -22,17 +28,29 @@ export default function Login() {
                     'Content-Type': 'application/json'
                 },
                 body: JSON.stringify(credentialsLog)
-            }).then(res => res.json())
+            }).then(res => res.json()) as BackResponse
             console.log(res)
+
+            if (res.status !== 'sucesso') {
+                setErrorResponseMessage(res.mensagem)
+                return
+            }
+
+            setCookie('token', res.token, {
+                path: '/',
+                maxAge: 86400
+            })
+
+            navigate('/')
         }
 
         send()
-    }, [credentialsLog])
+    }, [credentialsLog, navigate, setCookie])
 
     return (
         <>
             <Header />
-            <LoginContainer set={setCredentialsLog} operation='Log in' />
+            <LoginContainer set={setCredentialsLog} errorMessage={errorResponseMessage} />
             <Footer />
         </>
     )

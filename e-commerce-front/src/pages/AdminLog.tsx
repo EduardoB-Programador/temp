@@ -5,10 +5,16 @@ import { validateAdmin } from '../utils/ValidateCredentials'
 import Header from '../components/Header'
 import LoginContainer from '../components/LoginContainer'
 import Footer from '../components/Footer'
+import { BackResponse } from '../types/APITypes'
+import { useNavigate } from 'react-router'
+import { useCookies } from 'react-cookie'
 
 //Pagina -> efetivamente é um React Component, mas é um componente completo que retorna outros componentes
 export default function AdminLog() {
     const [credentialsLog, setCredentialsLog] = useState<admin | undefined>()
+    const [errorResponseMessage, setErrorResponseMessage] = useState<string>()
+    const navigate = useNavigate()
+    const [, setCookie] = useCookies(['stoken'])
 
     useEffect(() => {
         if (!credentialsLog)
@@ -23,17 +29,29 @@ export default function AdminLog() {
                     'Content-Type': 'application/json'
                 },
                 body: JSON.stringify(credentialsLog)
-            }).then(res => res.json())
+            }).then(res => res.json()) as BackResponse
             console.log(res)
+
+            if (res.status !== 'sucesso') {
+                setErrorResponseMessage(res.mensagem)
+                return
+            }
+
+            setCookie('stoken', res.token, {
+                path: '/',
+                maxAge: 86400
+            })
+
+            navigate('/')
         }
 
         send()
-    }, [credentialsLog])
+    }, [credentialsLog, navigate, setCookie])
 
     return (
         <>
             <Header />
-            <LoginContainer set={setCredentialsLog} operation='Log in' />
+            <LoginContainer set={setCredentialsLog} errorMessage={errorResponseMessage} />
             <Footer />
         </>
     )

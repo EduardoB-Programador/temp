@@ -1,4 +1,4 @@
-CREATE TABLE admin(
+CREATE TABLE pagamento(
     id SERIAL PRIMARY KEY,
     preco NUMERIC(6,2) NOT NULL,
     quantidade INT NOT NULL,

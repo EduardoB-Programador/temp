@@ -4,8 +4,8 @@ import { SetReactFunction } from '../types/ReactTypes'
 import { usuario } from '../types/ModelTypes'
 import { validateEmail, validatePassword } from '../utils/ValidateCredentials'
 
-export default function LoginContainer(props: { set: SetReactFunction<usuario| undefined>, operation:string }) {
-    const { set, operation } = props
+export default function LoginContainer(props: { set: SetReactFunction<usuario| undefined>, errorMessage?:string }) {
+    const { set, errorMessage } = props
     const emailRef = useRef<HTMLInputElement>(null)
     const senhaRef = useRef<HTMLInputElement>(null)
 
@@ -39,11 +39,12 @@ export default function LoginContainer(props: { set: SetReactFunction<usuario| u
             <form onSubmit={submitForm}>
                 <label htmlFor="input">Email</label>
                 <input type="email" ref={emailRef} onChange={emailHandler}/>
-                <p id='email-error' ref={pEmailErr}></p>
+                <p className='error-text' ref={pEmailErr}></p>
                 <label htmlFor="input">Senha</label>
                 <input type="password" ref={senhaRef} onChange={passwordHandler} />
-                <p id='pass-error' ref={pPassErr}></p>
-                <input type="submit" value={operation}/>
+                <p className='error-text' ref={pPassErr}></p>
+                <input type="submit" value="Log in"/>
+                <p className="error-text">{errorMessage}</p>
             </form>
         </div>
     )

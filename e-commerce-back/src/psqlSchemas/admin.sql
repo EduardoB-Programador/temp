@@ -2,6 +2,6 @@ CREATE TABLE admin(
     id SERIAL PRIMARY KEY,
     nome VARCHAR NOT NULL,
     email VARCHAR UNIQUE NOT NULL,
-    senha VARCHAR NOT NULL
+    senha VARCHAR NOT NULL,
     ativo BOOLEAN DEFAULT 'TRUE'
 )
