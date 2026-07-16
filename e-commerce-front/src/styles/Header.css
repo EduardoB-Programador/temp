@@ -52,3 +52,8 @@
     padding: 0.7rem;
     transition: background 0.25s
 }
+
+#user-img {
+    height: 3.2rem;
+    object-fit: contain;
+}

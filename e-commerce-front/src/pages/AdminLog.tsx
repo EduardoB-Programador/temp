@@ -8,13 +8,14 @@ import Footer from '../components/Footer'
 import { BackResponse } from '../types/APITypes'
 import { useNavigate } from 'react-router'
 import { useCookies } from 'react-cookie'
+import { setNewCookie } from '../utils/CookiesUtils'
 
 //Pagina -> efetivamente é um React Component, mas é um componente completo que retorna outros componentes
 export default function AdminLog() {
     const [credentialsLog, setCredentialsLog] = useState<admin | undefined>()
     const [errorResponseMessage, setErrorResponseMessage] = useState<string>()
     const navigate = useNavigate()
-    const [, setCookie] = useCookies(['stoken'])
+    const [, setCookie] = useCookies(['user', 'admin', 'token', 'stoken'])
 
     useEffect(() => {
         if (!credentialsLog)
@@ -42,7 +43,9 @@ export default function AdminLog() {
                 maxAge: 86400
             })
 
-            navigate('/')
+            setNewCookie('admin', res.info![0], setCookie)
+
+            navigate('/admin/')
         }
 
         send()

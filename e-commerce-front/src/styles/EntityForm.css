@@ -1,0 +1,21 @@
+.entity-form {
+    background-color: var(--cor3);
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    min-width: 280px;
+}
+
+.entity-form input {
+    padding: 0.4rem;
+    margin-bottom: 0.5rem;
+}
+
+.entity-form .erro {
+    color: red;
+    font-size: 0.9rem;
+}
+
+.entity-form button[type="submit"] {
+    margin-top: 0.5rem;
+}

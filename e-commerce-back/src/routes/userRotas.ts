@@ -2,7 +2,7 @@ import { zValidator } from "@hono/zod-validator"
 import { loginSchema, usuarioSchema } from "../model/schemas"
 import { Hono } from "hono"
 import { Postgre } from "../repo/psqlPool"
-import { AuthMiddlewareUser } from "../AuthMiddleware"
+import { AuthMiddlewareAdmin, AuthMiddlewareUser } from "../AuthMiddleware"
 import { sign } from "hono/jwt"
 
 const usuario = new Hono()
@@ -11,13 +11,13 @@ const db = Postgre.getInstance()
 const tabela = 'usuario'
 const JWT = process.env.JWT!
 
-usuario.get('/:id{[0-9]+}', AuthMiddlewareUser, async c => {
+usuario.get('/:id{[0-9]+}', AuthMiddlewareAdmin, async c => {
     const id = Number(c.req.param('id'))
     const info = await db.executarLer({ id: id }, tabela)
     return c.json(info, info.code)
 })
 
-    .get('/all', AuthMiddlewareUser, async c => {
+    .get('/all', AuthMiddlewareAdmin, async c => {
         const info = await db.executarLerTudo(tabela)
         return c.json(info, info.code)
     })

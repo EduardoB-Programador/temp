@@ -1,0 +1,6 @@
+.produto-card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 1rem;
+    width: 220px;
+}

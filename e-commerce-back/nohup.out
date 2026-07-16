@@ -2792,3 +2792,48 @@ TypeError: undefined is not an object (evaluating 'info.info[0].email')
       at async <anonymous> (/home/eduardo/Everything/Projects/e-commerce-ICP/e-commerce-back/node_modules/hono/dist/hono-base.js:306:31)
 
 error: script "dev" was terminated by signal SIGTERM (Polite quit request)
+$ bun run --watch index.ts
+Started development server: http://localhost:3000
+Started development server: http://localhost:3000
+Started development server: http://localhost:3000
+63 |     }
+64 | 
+65 |     public update(obj:any, tabela:string) {
+66 |         let { id } = obj
+67 |         if (!id)
+68 |             throw new Error('Cannot make update without id')
+                           ^
+error: Cannot make update without id
+      at update (/home/eduardo/Everything/Projects/e-commerce-ICP/e-commerce-back/src/repo/SQLanguage.ts:68:23)
+      at executarAtualizar (/home/eduardo/Everything/Projects/e-commerce-ICP/e-commerce-back/src/repo/psqlPool.ts:81:28)
+      at <anonymous> (/home/eduardo/Everything/Projects/e-commerce-ICP/e-commerce-back/src/routes/userRotas.ts:52:31)
+      at dispatch (/home/eduardo/Everything/Projects/e-commerce-ICP/e-commerce-back/node_modules/hono/dist/compose.js:22:23)
+      at <anonymous> (/home/eduardo/Everything/Projects/e-commerce-ICP/e-commerce-back/node_modules/hono/dist/validator/validator.js:81:18)
+      at async dispatch (/home/eduardo/Everything/Projects/e-commerce-ICP/e-commerce-back/node_modules/hono/dist/compose.js:22:23)
+      at async <anonymous> (/home/eduardo/Everything/Projects/e-commerce-ICP/e-commerce-back/src/AuthMiddleware.ts:18:15)
+      at async dispatch (/home/eduardo/Everything/Projects/e-commerce-ICP/e-commerce-back/node_modules/hono/dist/compose.js:22:23)
+      at async cors2 (/home/eduardo/Everything/Projects/e-commerce-ICP/e-commerce-back/node_modules/hono/dist/middleware/cors/index.js:79:11)
+      at async dispatch (/home/eduardo/Everything/Projects/e-commerce-ICP/e-commerce-back/node_modules/hono/dist/compose.js:22:23)
+      at async <anonymous> (/home/eduardo/Everything/Projects/e-commerce-ICP/e-commerce-back/node_modules/hono/dist/hono-base.js:306:31)
+
+63 |     }
+64 | 
+65 |     public update(obj:any, tabela:string) {
+66 |         let { id } = obj
+67 |         if (!id)
+68 |             throw new Error('Cannot make update without id')
+                           ^
+error: Cannot make update without id
+      at update (/home/eduardo/Everything/Projects/e-commerce-ICP/e-commerce-back/src/repo/SQLanguage.ts:68:23)
+      at executarAtualizar (/home/eduardo/Everything/Projects/e-commerce-ICP/e-commerce-back/src/repo/psqlPool.ts:81:28)
+      at <anonymous> (/home/eduardo/Everything/Projects/e-commerce-ICP/e-commerce-back/src/routes/userRotas.ts:52:31)
+      at dispatch (/home/eduardo/Everything/Projects/e-commerce-ICP/e-commerce-back/node_modules/hono/dist/compose.js:22:23)
+      at <anonymous> (/home/eduardo/Everything/Projects/e-commerce-ICP/e-commerce-back/node_modules/hono/dist/validator/validator.js:81:18)
+      at async dispatch (/home/eduardo/Everything/Projects/e-commerce-ICP/e-commerce-back/node_modules/hono/dist/compose.js:22:23)
+      at async <anonymous> (/home/eduardo/Everything/Projects/e-commerce-ICP/e-commerce-back/src/AuthMiddleware.ts:18:15)
+      at async dispatch (/home/eduardo/Everything/Projects/e-commerce-ICP/e-commerce-back/node_modules/hono/dist/compose.js:22:23)
+      at async cors2 (/home/eduardo/Everything/Projects/e-commerce-ICP/e-commerce-back/node_modules/hono/dist/middleware/cors/index.js:79:11)
+      at async dispatch (/home/eduardo/Everything/Projects/e-commerce-ICP/e-commerce-back/node_modules/hono/dist/compose.js:22:23)
+      at async <anonymous> (/home/eduardo/Everything/Projects/e-commerce-ICP/e-commerce-back/node_modules/hono/dist/hono-base.js:306:31)
+
+error: script "dev" was terminated by signal SIGTERM (Polite quit request)

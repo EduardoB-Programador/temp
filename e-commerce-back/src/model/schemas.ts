@@ -30,7 +30,7 @@ export const produtoSchema = z.object({
     nome: z.string(),
     preco: z.number(),
     quantidade: z.int(),
-    adm_id_mod: z.int().optional(),
+    admin_id_mod: z.int().optional(),
     data_mod: z.date().optional(),
     ativo: z.boolean().optional()
 })

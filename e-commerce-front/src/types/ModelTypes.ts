@@ -28,7 +28,7 @@ export type produto = {
     nome: string
     preco: number
     quantidade: number
-    adm_id_mod?: number
+    admin_id_mod?: number
     data_mod?: Date
     ativo?: boolean
 }

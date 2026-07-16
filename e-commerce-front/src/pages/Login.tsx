@@ -8,12 +8,13 @@ import { validateUser } from '../utils/ValidateCredentials'
 import { BackResponse } from '../types/APITypes'
 import { useNavigate } from 'react-router'
 import { useCookies } from 'react-cookie'
+import { setNewCookie } from '../utils/CookiesUtils'
 
 export default function Login() {
     const [credentialsLog, setCredentialsLog] = useState<usuario>()
     const [errorResponseMessage, setErrorResponseMessage] = useState<string>()
     const navigate = useNavigate()
-    const [, setCookie] = useCookies(['token'])
+    const [, setCookie] = useCookies(['user', 'admin', 'token', 'stoken'])
 
     useEffect(() => {
         if (!credentialsLog)
@@ -40,6 +41,8 @@ export default function Login() {
                 path: '/',
                 maxAge: 86400
             })
+
+            setNewCookie('user', res.info![0], setCookie)
 
             navigate('/')
         }

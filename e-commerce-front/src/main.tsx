@@ -10,6 +10,8 @@ import AdminLog from './pages/AdminLog.tsx'
 import AdminSign from './pages/AdminSign.tsx'
 import ErrorPage from './pages/ErrorPage.tsx'
 import { CookiesProvider } from 'react-cookie'
+import AdminHome from './pages/AdminHome.tsx'
+import LoggedPage from './pages/LoggedPage.tsx'
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
@@ -20,13 +22,17 @@ createRoot(document.getElementById('root')!).render(
           <Route element={<Login />} path='/login' />
           <Route element={<SignIn />} path='/sign' />
 
-          <Route element={<Home />} path='/admin/' />
+          <Route element={<AdminHome />} path='/admin/' />
           <Route element={<AdminLog />} path='/admin/login' />
           <Route element={<AdminSign />} path='/admin/sign' />
 
-        <Route element={<Sobre />} path='/sobre' />
-      </Routes>
-    </BrowserRouter>
+          <Route element={<LoggedPage />} path='/me' />
+          <Route element={<Sobre />} path='/sobre' />
+
+          <Route element={<ErrorPage />} path='*'/>
+        </Routes>
+      </BrowserRouter>
+    </CookiesProvider>
   </StrictMode>
 )
 

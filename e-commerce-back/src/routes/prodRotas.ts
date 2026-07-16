@@ -22,6 +22,7 @@ produto.get('/:id{[0-9]+}', async c => {
 
 .post('/add', AuthMiddlewareAdmin, zValidator('json', produtoSchema), async c => {
     const obj = c.req.valid('json')
+    console.log(obj)
     const info = await db.executarCriar(obj, tabela)
     return c.json(info, info.code)
 })
