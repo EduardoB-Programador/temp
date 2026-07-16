@@ -17,8 +17,6 @@ export default function DisplayCredentials(props: { payload: payload, set: SetRe
     const newEnderecoRef = useRef<HTMLInputElement>(null)
     const salvarInputRef = useRef<HTMLInputElement>(null)
 
-
-
     if (!payload)
         return <></>
 
@@ -85,6 +83,7 @@ export default function DisplayCredentials(props: { payload: payload, set: SetRe
                         <br />
                         <label>Senha:</label>
                         <br />
+                        {/* taria tudo funcionando essa bosta aqui, se eu tivesse pensado em colocar um placeholder ao inves de value, catiço */}
                         <input type="text" ref={senhaRef} disabled value={payload.senha} />
                         <input type="text" ref={newSenhaRef} style={{ display: 'none' }} />
                         <br />
