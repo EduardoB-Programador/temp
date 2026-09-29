@@ -1,0 +1,41 @@
+:root {
+    --bg-color: #101021;
+    --container-color: #2a2a3f;
+}
+
+body {
+    background: var(--bg-color);
+    margin: 0;
+}
+
+#cadastro, #login {
+    margin: 20px auto;
+    
+    width: 400px;
+    height: 250px;
+
+    padding: 20px;
+    box-sizing: border-box;
+
+    border-radius: 20px;
+
+    background-color: var(--container-color);
+}
+
+form {
+    color: #fff;
+
+    width: auto;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+input {
+    border-radius: 5px;
+    padding: 3px;
+
+    outline: none;
+    
+}
