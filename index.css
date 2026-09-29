@@ -20,12 +20,7 @@ body {
     border-radius: 20px;
 
     background-color: var(--container-color);
-}
-
-form {
     color: #fff;
-
-    width: auto;
 
     display: flex;
     flex-direction: column;

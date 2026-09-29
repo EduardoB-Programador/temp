@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang='en'>
+
 <head>
     <meta charset='utf-8'>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
@@ -7,26 +8,25 @@
     <link rel='stylesheet' href='index.css'>
     <script src="index.js" defer></script>
 </head>
+
 <body>
     <div id="cadastro">
-        <form onsubmit="">
-            <h3>Cadastro</h3>
-            <label>email</label>
-            <input type="email" id="email-cad">
-            <label>senha</label>
-            <input type="password" id="senha-cad">
-            <input type="submit" value="cadastrar">
-        </form>
+        <h3>Cadastro</h3>
+        <label>email</label>
+        <input type="email" id="email-cad" placeholder="example@gmail.com">
+        <label>senha</label>
+        <input type="password" id="senha-cad" placeholder="awa">
+        <input type="submit" value="cadastrar" onclick="cadastrar()">
+        <p id="mensagem-cad"></p>
     </div>
     <div id="login">
-        <form onsubmit="">
-            <h3>Login</h3>
-            <label>email</label>
-            <input type="email" id="email-log">
-            <label>senha</label>
-            <input type="password" id="senha-log">
-            <input type="submit" value="login">
-        </form>
+        <h3>Login</h3>
+        <label>email</label>
+        <input type="email" id="email-log" placeholder="example@gmail.com">
+        <label>senha</label>
+        <input type="password" id="senha-log" placeholder="awa">
+        <input type="submit" value="login" onclick="logar()">
+        <p id="mensagem-log"></p>
     </div>
 </body>
 </html>
