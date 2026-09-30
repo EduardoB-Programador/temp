@@ -1,5 +1,4 @@
-const emails = []
-const senhas = []
+const usuarios = []
 
 function cadastrar() {
     let email = document.getElementById('email-cad').value
@@ -9,8 +8,12 @@ function cadastrar() {
         return
 
     //mais verificações
-    emails.push(email)
-    senhas.push(senha)
+    const usuario = {
+        email: email,
+        senha: senha
+    }
+
+    usuarios.push(usuario)
 
     document.getElementById("mensagem-cad").innerText = "Cadastrado " + email
 }
@@ -19,9 +22,9 @@ function logar() {
     const email = document.getElementById('email-log').value
     const senha = document.getElementById('senha-log').value
 
-    for (let i = 0; i < emails.length; i++) {
-        if (email === emails[i] && senha === senhas[i]){
-            document.getElementById("mensagem-log").innerText = "Logado como " + email
+    for (const user of usuarios) {
+        if (user.email === email && user.senha === senha) {
+            document.getElementById("mensagem-log").innerText = "Logado como " + user.email
             return
         }
     }
